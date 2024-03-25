@@ -3,28 +3,33 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routers/Root.router.jsx'
 
 import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
+import Contect from './pages/Contect.jsx'
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Root/>,
-    children:[
+    path: '/',
+    element: <Root />,
+    children: [
       {
-        path:'/',
-        element:<App/>,
+        path: '/',
+        element: <App />,
       },
       {
-        path:'/about',
-        element:<About/>,
+        path: '/about',
+        element: <About />,
       },
       {
-        path:'/project',
-        element:<Projects/>,
+        path: '/project',
+        element: <Projects />,
+      },
+      {
+        path: '/contect',
+        element: <Contect />,
       },
 
     ]
@@ -35,8 +40,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-    {/* <App /> */}
+      {/* <App /> */}
     </RouterProvider>
-    
+
   </React.StrictMode>,
 )
