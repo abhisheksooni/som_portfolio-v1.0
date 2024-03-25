@@ -6,6 +6,7 @@ import img5 from '../Images/skills_icons/ps.png'
 import img6 from '../Images/skills_icons/sketchbook.webp'
 import img7 from '../Images/skills_icons/sketchup.png'
 import som from '../Images/som.jpg'
+import som1 from '../Images/som1.png'
 
 
 export{
@@ -16,5 +17,6 @@ export{
     img5,
     img6,
     img7,
-    som
+    som,
+    som1,
 }

@@ -2,7 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { img1,img2,img3,img4,img5,img6,img7,som } from './Imports/Images.js'
+import { img1,img2,img3,img4,img5,img6,img7,som1 } from './Imports/Images.js'
 import { useEffect } from 'react'
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
             </div>
           </div>
           <div className="w-[320px]">
-            <img className='bg-color3 w-full h-[450px] rounded-3xl' src={som} alt="" />
+            <img className='bg-color3 w-full h-[450px] rounded-3xl' src={som1} alt="" />
           </div>
       </section>
       {/* Skills */}
