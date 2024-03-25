@@ -7,8 +7,8 @@ function About() {
   },[])
   return (
     <>
-    <div className="h-[60px] lg:h-[120px]"></div>
-      <section className='max-w-[1800px] mx-auto'>
+    <div className="h-[90px] lg:h-[120px]"></div>
+      <section className='max-w-[1800px] mx-auto px-4'>
         <div className=" flex items-center justify-center text-white gap-5">
           <div className="bg-white w-[7px] h-[7px] rounded-full"></div>
           <p className='py-6 font-semibold text-3xl'>  About Us</p>

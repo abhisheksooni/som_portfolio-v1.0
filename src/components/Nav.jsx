@@ -35,7 +35,7 @@ function Nav() {
       </div>
       </div>
      {/* Menu opsons */}
-      <div className="absoluter fixed z-30 max-w-[86vw] w-full left-[5vw] top-[6rem] ">
+      <div className=" fixed max-w-[86vw] w-full left-[7vw] mx-auto top-[6rem] ">
       <div className={` ${menu ? 'inline-block' : 'hidden'}  flex justify-center mx-auto  w-full rounded-3xl bg-color2 text-white text-2xl h-[400px]`}>
         <ul className='py-5 *:my-2 flex flex-col items-center w-[90%]  '>
           <li>

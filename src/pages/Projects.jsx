@@ -3,14 +3,14 @@ import React, { useEffect } from 'react'
 function Projects() {
 
   useEffect(()=>{
-      window.scroll({top:'0',behavior:'smooth'})
+      window.scroll({top:'0',behavior:'smooth'}) 
   },[])
 
   return (
 
    
     <>
-    <div className="h-[60px] lg:h-[120px]"></div>
+    <div className="h-[60px] lg:h-[120px] px-4"></div>
     <section className="flex justify-center items-center flex-col text-white">
     <div className=" flex items-center gap-5 ">
                 <div className="bg-white w-[7px] h-[7px] rounded-full"></div>
