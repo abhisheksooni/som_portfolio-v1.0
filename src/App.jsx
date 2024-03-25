@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { img1,img2,img3,img4,img5,img6,img7 } from './Imports/Images.js'
+import { useEffect } from 'react'
 
 function App() {
 
@@ -16,9 +17,15 @@ function App() {
    { img:img7},
   ]
 
+  useEffect(()=>{
+    window.scroll({top:0,behavior:'smooth'})
+  },[])
+
   return (
     <>
-      <section className='text-white flex justify-center items-center gap-10 lg:gap-20 my-20 flex-wrap max-w-[1800px]'>
+    {/* hero */}
+    <div className="h-[60px] lg:h-[120px]"></div>
+      <section className='text-white flex justify-center items-center gap-10 lg:gap-20 my-20 flex-wrap max-w-[1800px] px-4 lg:px-0'>
           <div className="text-center lg:text-start">
             <h1 className='text-5xl poppins-bold'>I'm Somya Soni,</h1>
             <h1 className='text-5xl poppins-bold py-1.5'>Interion Designer</h1>
@@ -38,7 +45,7 @@ function App() {
       <div className=" flex justify-center flex-wrap px-5 md:px-0 gap-5 hover:*:scale-125">
         {
           skills.map((i)=>(
-            <img key={i} className='max-w-[60px] ' src={i.img} alt="" />
+            <img key={i.img} className='max-w-[60px] ' src={i.img} alt="" />
           ))
         }
       </div>
