@@ -35,23 +35,23 @@ function Nav() {
       </div>
       </div>
      {/* Menu opsons */}
-      <div className="absoluter fixed z-30 max-w-[86vw] w-full left-[5.5vw] top-[6rem] ">
+      <div className="absoluter fixed z-30 max-w-[86vw] w-full left-[5vw] top-[6rem] ">
       <div className={` ${menu ? 'inline-block' : 'hidden'}  flex justify-center mx-auto  w-full rounded-3xl bg-color2 text-white text-2xl h-[400px]`}>
         <ul className='py-5 *:my-2 flex flex-col items-center w-[90%]  '>
           <li>
-            <NavLink to={'/'}  className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} flex items-center p-3`}> <span>Home</span></NavLink>
+            <NavLink to={'/'} onClick={() => setmenu(false)} className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} flex items-center p-3`}> <span>Home</span></NavLink>
           </li>
           <div className=" w-full h-[1px] bg-color4 my-2 rounded-full"></div>
           <li>
-            <NavLink to={'/about'}  className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} `}>About Us</NavLink>
+            <NavLink to={'/about'} onClick={() => setmenu(false)} className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} `}>About Us</NavLink>
           </li>
           <div className=" w-full h-[1px] bg-color4 my-2 rounded-full"></div>
           <li>
-            <NavLink to={'/project'}  className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} `}>Project</NavLink>
+            <NavLink to={'/project'} onClick={() => setmenu(false)} className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'} `}>Project</NavLink>
           </li>
           <div className=" w-full h-[1px] bg-color4 my-2 rounded-full"></div>
           <li>
-            <NavLink to={'/contect'}  className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'}`}>Contect Us</NavLink>
+            <NavLink to={'/contect'} onClick={() => setmenu(false)} className={({ isActive }) => `${isActive ? 'text-color3' : 'text-white'}`}>Contect Us</NavLink>
           </li>
         </ul>
       </div>
