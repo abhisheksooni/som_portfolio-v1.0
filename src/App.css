@@ -53,3 +53,11 @@
     font-weight: 900;
     font-style: normal;
   }
+
+
+  .bg-kitchen{
+    background-image: url(./Images/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }

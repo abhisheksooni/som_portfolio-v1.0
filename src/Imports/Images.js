@@ -7,6 +7,8 @@ import img6 from '../Images/skills_icons/sketchbook.webp'
 import img7 from '../Images/skills_icons/sketchup.png'
 import som from '../Images/som.jpg'
 import som1 from '../Images/som1.png'
+import kitchen from '../Images/kitchen.jpg'
+import project1 from '../Images/Projects/p2.jpg'
 
 
 export{
@@ -19,4 +21,6 @@ export{
     img7,
     som,
     som1,
+    kitchen,
+    project1,
 }

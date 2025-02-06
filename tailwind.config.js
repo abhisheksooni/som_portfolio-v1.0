@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors:{
-        'color1':'#181720',
-        'color2':'#22212A',
-        'color3':'#E46137',
-        // 'color3':'#583EBC',
-        'color4':'#4C4B4F',
-        'color5':'#3E3D4B',
+        'color1':'#FBF2E9',
+        'color2':'#A88A64',
+        'color3':'#0C1429',
+        'color4':'#E8E1D9',
+        'color5':'#E2D0B6',
+        'color6':'#242A40',
       }
     },
   },

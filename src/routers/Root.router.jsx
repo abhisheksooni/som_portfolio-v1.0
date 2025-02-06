@@ -6,7 +6,7 @@ import {Footer,Nav} from '../components/All.components'
 function Root() {
   return (
     <>
-    <div className="bg-color1 h-[100vh] max-w-[1920px]">
+    <div className=" h-[100vh] max-w-[1920px]">
     <Nav/>
     <Outlet/>
     <Footer/>

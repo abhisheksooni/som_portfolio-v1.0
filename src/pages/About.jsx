@@ -17,8 +17,9 @@ function About() {
 
         <div className=' text-white flex justify-center items-center gap-10 lg:gap-20 my-20 flex-wrap '>
 
+{/* h-[450px] */}
           <div className="w-[320px]">
-            <img className='bg-color3 w-full h-[450px] rounded-3xl' src="" alt="" />
+            <img className='bg-color3 w-full rounded-3xl' src="" alt="" />
           </div>
           <div className="text-center lg:text-start">
             <h1 className='text-5xl poppins-bold'>I'm Somya Soni,</h1>
