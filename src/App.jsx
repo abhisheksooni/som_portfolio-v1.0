@@ -108,7 +108,7 @@ function App() {
           </section>
         </section>
         {/* section 4 */}
-        <section className=' flex flex-wrap h-[55rem]'>
+        <section id='about' className=' flex flex-wrap h-[60rem]'>
           {/* left */}
           <section className='bg-white p-14 w-[67%] h-full '>
             <h2 className='text-color2'>Hospitality Spaces</h2>
@@ -154,8 +154,14 @@ function App() {
           </section>
 
         </section>
+        {/* rev */}
+        <section className=' h-48 gap-4 justify-center items-center outline'>
+<div className="bg-color6 w-72 h-48"></div>
+<div className="bg-color2 w-20 h-20"></div>
+<div className="bg-color1 w-20 h-20"></div>
+        </section>
         {/* section 5 */}
-        <section className='bg-color2 w-full h-[50rem]'>
+        <section className='bg-color2 w-full pb-[6rem]'>
           <div className="flex justify-center flex-col items-center py-20">
             <h2 className='text-color5 text-3xl'>Ready to Transform Your</h2>
             <div className=" flex gap-3 mt-5">
@@ -166,23 +172,23 @@ function App() {
           </div>
           <section className='flex gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="w-[24rem] h-[24rem] bg-white"> add</div>
-            <div className="w-[24rem] h-[24rem] bg-white">add</div>
-            <div className="w-[24rem] h-[24rem] bg-white">add</div>
+            <div className="w-[35rem] h-[35rem] bg-white"> add</div>
+            <div className="w-[35rem] h-[35rem] bg-white">add</div>
+            <div className="w-[35rem] h-[35rem] bg-white">add</div>
           </section>
         </section>
         {/* section 6 Our Services */}
-        <section className='bg-color3 pb-16'>
+        <section id='services' className='bg-color3 pb-16'>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='flex gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="w-[24rem] h-[24rem] bg-color6"></div>
-            <div className="w-[24rem] h-[24rem] bg-color6"></div>
-            <div className="w-[24rem] h-[24rem] bg-color6"></div>
+            <div className="w-[35rem] h-[35rem] bg-color6"></div>
+            <div className="w-[35rem] h-[35rem] bg-color6"></div>
+            <div className="w-[35rem] h-[35rem] bg-color6"></div>
           </section>
         </section>
         {/* section 7 FAQs */}
-        <section className='bg-color3 flex  w-full flex-wrap h-[45rem] pt-6 py-10'>
+        <section className='bg-color3 flex  w-full flex-wrap h-[50rem] pt-6 py-10'>
           <div className="w-[60%] p-12 flex flex-col justify-center">
             <div className="max-w-[70%]">
               <span className='text-color2'>FAQs</span>
