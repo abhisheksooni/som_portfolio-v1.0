@@ -29,7 +29,7 @@ function Nav() {
           </div>
           <p className='ml-2'>Rending</p>
         </div>
-        <div className="flex">
+        <div className="hidden lg:flex">
           <ul className='flex items-center gap-8'>
             <NavLink to={"/"}>
               <li>Home</li>
