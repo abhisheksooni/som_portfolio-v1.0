@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <section>
+      <section  className=''>
         {/* section 1 */}
         <section>
           <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} interval={2000} >
@@ -43,7 +43,7 @@ function App() {
         <section>
           <p>Crafting Inspiring Interiors</p>
           <h2>Elevating Spaces</h2>
-          <div className=" flex gap-5 p-8 justify-center *:w-[33rem] *:h-[35rem]">
+          <div className=" lg:flex  *:mb-5 lg:mb-0 gap-5 p-8 justify-center lg:*:w-[33rem] *:h-[35rem]">
 
             <div className="bg-color3 rounded-md p-10 relative">
               <div className="bg-white rounded-full p-1 w-[5rem] h-[5rem]"> </div>
@@ -83,38 +83,40 @@ function App() {
 
           </div>
         </section>
-        {/* section 3 */}
-        <section className='p-10 px-12'>
+        {/* section 3 Featured project */}
+        <section className='p-10 lg:px-12'>
           <div className="flex justify-between py-5">
             <p>Featured Project</p>
             <p>Ore</p>
           </div>
-          <section className='flex gap-5 py-10'>
-            <div className="bg-color3 w-[15rem] h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+          <section className=' lg:flex *:mb-5 lg:*:mb-0 gap-5 py-10'>
+            <div className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
               <p className='text-xl font-bold  text-color1'>Living Room</p>
             </div>
-            <div className="bg-color2 w-[15rem] h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
               <p className='text-xl font-bold  text-color1'>Living Room</p>
             </div>
-            <div className="bg-color4 w-[15rem] h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
               <p className='text-xl font-bold  text-color3'>Living Room</p>
             </div>
-            <div className="bg-white w-[15rem] h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
               <p className='text-xl font-bold  text-color3'>Living Room</p>
             </div>
-            <div className="bg-whiteh-[12rem] flex items-center w-[25rem]">
+            <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
+              <h2 className='mb-4'>Our Process</h2>
               <p className=' text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem modi minima ipsam id! Dolorem eos amet velit nulla, saepe placeat nam atque aliquid itaque. Quisquam iusto omnis provident laboriosam.</p>
+              <p className='mt-3'>Discover More.</p>
             </div>
           </section>
         </section>
         {/* section 4 */}
-        <section id='about' className=' flex flex-wrap h-[60rem]'>
+        <section id='about' className=' lg:flex flex-wrap lg:h-[60rem]'>
           {/* left */}
-          <section className='bg-white p-14 w-[67%] h-full '>
+          <section className='bg-white p-14 lg:w-[67%] h-full '>
             <h2 className='text-color2'>Hospitality Spaces</h2>
             <h2 className='text-7xl mt-4'>Luxurious Retreats</h2>
-            <div className=" flex gap-7 mt-10">
-              <div className="w-1/2 ">
+            <div className=" flex gap-7 mt-10 flex-wrap ">
+              <div className="lg:w-1/2 w-full">
                 <div className="bg-color2  h-[30rem] rounded-lg"></div>
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
                 <p className='text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -125,7 +127,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="w-1/2">
+              <div className="lg:w-1/2 w-full">
                 <div className="bg-color2  h-[30rem] rounded-lg"></div>
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
                 <p className='text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -140,13 +142,13 @@ function App() {
 
           </section>
           {/* right */}
-          <section className='bg-color3 w-[33%] h-full flex items-center justify-center flex-col'>
+          <section className='bg-color3 lg:w-[33%] py-16 h-full flex items-center justify-center flex-col p-5'>
 
-            <div className="rounded-full w-[250px] h-[250px] bg-white "></div>
+            <div className="rounded-full w-[26rem] h-[26rem] lg:w-[250px] lg:h-[250px] bg-white "></div>
             {/* <img src="" alt="" /> */}
             <div className="max-w-[300px] text-white">
-              <h2 className='font-medium text-xl'>About Us</h2>
-              <p className='text-white/50 text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus porro tempora doloremque blanditiis voluptatum nam enim. Dignissimos consequuntur quia tempore blanditiis? Eos, vero suscipit impedit iusto odio quia voluptas optio!</p>
+              <h2 className='font-medium mt-8 lg:mt-0 text-xl'>About Us</h2>
+              <p className='text-white/50 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus porro tempora doloremque blanditiis voluptatum nam enim. Dignissimos consequuntur quia tempore blanditiis? Eos, vero suscipit impedit iusto odio quia voluptas optio!</p>
               <h2 className='mt-6 mb-3 text-lg'>Meet Our Founder</h2>
               <p className='text-white/50'>Lorem ipsum dolor sit amet consectetur, Suscipit ullam, ea harum</p>
               <p className='text-white/50 text-sm mt-4'> illum nihil vitae dolores, porro possimus, corrupti ratione eligendi voluptatibus laudantium incidunt? Quidem rerum cum unde sequi velit?</p>
@@ -155,14 +157,14 @@ function App() {
 
         </section>
         {/* rev */}
-        <section className=' h-48 gap-4 justify-center items-center outline'>
-<div className="bg-color6 w-72 h-48"></div>
-<div className="bg-color2 w-20 h-20"></div>
-<div className="bg-color1 w-20 h-20"></div>
-        </section>
+        {/* <section className=' w-full h-48  py-16 flex flex-col justify-center items-center  overflow-scroll '>
+<div className="bg-color6 w-1/2 h-48"></div>
+<div className="bg-color2 w-1/2 h-48"></div>
+<div className="bg-white w-1/2 h-48"></div>
+        </section> */}
         {/* section 5 */}
-        <section className='bg-color2 w-full pb-[6rem]'>
-          <div className="flex justify-center flex-col items-center py-20">
+        <section className='bg-color2 w-full px-6 lg:px-0 pb-[2rem] lg:pb-[6rem]'>
+          <div className="flex justify-center flex-col items-center py-5 lg:py-20">
             <h2 className='text-color5 text-3xl'>Ready to Transform Your</h2>
             <div className=" flex gap-3 mt-5">
               <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Get Started</p></button>
@@ -170,48 +172,48 @@ function App() {
 
             </div>
           </div>
-          <section className='flex gap-5 justify-center *:rounded-md mt-5'>
+          <section className='flex gap-4 lg:gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="w-[35rem] h-[35rem] bg-white"> add</div>
-            <div className="w-[35rem] h-[35rem] bg-white">add</div>
-            <div className="w-[35rem] h-[35rem] bg-white">add</div>
+            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white"> add</div>
+            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white">add</div>
+            <div className="max-w-[35rem] w-full h-[8rem] max-h-[35rem] bg-white">add</div>
           </section>
         </section>
         {/* section 6 Our Services */}
-        <section id='services' className='bg-color3 pb-16'>
+        <section id='services' className='bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
-          <section className='flex gap-5 justify-center *:rounded-md mt-5'>
+          <section className='lg:flex *:mb-5 lg:*:mb-0  gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="w-[35rem] h-[35rem] bg-color6"></div>
-            <div className="w-[35rem] h-[35rem] bg-color6"></div>
-            <div className="w-[35rem] h-[35rem] bg-color6"></div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
           </section>
         </section>
         {/* section 7 FAQs */}
-        <section className='bg-color3 flex  w-full flex-wrap h-[50rem] pt-6 py-10'>
-          <div className="w-[60%] p-12 flex flex-col justify-center">
-            <div className="max-w-[70%]">
+        <section className='bg-color3 flex  w-full flex-wrap lg:h-[50rem] pt-6 py-10'>
+          <div className="lg:w-[60%] p-12 flex flex-col justify-center">
+            <div className="lg:max-w-[70%]">
               <span className='text-color2'>FAQs</span>
-              <p className='text-6xl mt-7 mb-10 text-white'>Frequently Asked</p>
+              <p className=' text-4xl lg:text-6xl mt-7 mb-10 text-white'>Frequently Asked Qunctions</p>
               <p className='my-8 text-white/70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam iusto molestias dignissimos molestiae dolore. Nostrum dolore </p>
               <p className='mb-10 text-white/30'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam iusto molestias dignissimos molestiae dolore. Nostrum dolore </p>
 
               <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contect Us</p></button>
             </div>
           </div>
-          <div className="w-[40%] bg-white">
+          <div className="lg:w-[40%] w-full h-[30rem] bg-white">
             Image add</div>
         </section>
         {/* section 8 Quick Link */}
-        <section className='flex bg-color3 gap-8 py-16 justify-center'>
+        <section className='lg:flex bg-color3 gap-8 lg:py-16 px-6 lg:px-0 justify-center'>
           <div className="flex gap-5 *:rounded-md">
-            <div className="w-[20rem] h-[20rem] bg-white"></div>
-            <div className="w-[20rem] h-[20rem] bg-white"></div>
-            <div className="w-[20rem] h-[20rem] bg-white"></div>
+            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem]  bg-white">h</div>
+            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem] bg-white"></div>
+            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem] bg-white"></div>
           </div>
           <div className="">
             <p className='text-color2 m-5'>Quick Links</p>
-            <div className="bg-color6 p-5 px-10 rounded-xl max-w-[400px]">
+            <div className="bg-color6 p-5 px-10 rounded-xl  lg:max-w-[400px]">
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
               <p className='text-white/50'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, maiores molestiae architecto quod nobis adipisci impedit omnis repellendus blanditiis amet quasi repellat libetore quas?</p>
             </div>
