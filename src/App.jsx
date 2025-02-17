@@ -51,8 +51,8 @@ function App() {
               <div className="text-color1 absolute bottom-10">
 
                 <p className='font-extrabold text-4xl'>New York's Premier</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta consequuntur amet. Aut velit consectetur eligendi vero illum earum. Inventore odit,</p>
-                <p className='text-xs w-[260px] mt-8 text-color1/50' >- Innovative Solutions</p>
+                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Welcome to our Interior Design Porfolio, wher we transform living spaces into personalized</p>
+                <p className='text-xs w-[260px] mt-8 text-color1/50' >Innovative Solutions</p>
               </div>
 
             </div>
@@ -61,9 +61,9 @@ function App() {
 
               <div className="text-white absolute bottom-10">
 
-                <p className='font-extrabold text-4xl'>New York's Premier</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta consequuntur amet. Aut velit consectetur eligendi vero illum earum. Inventore odit,</p>
-                <p className='text-xs w-[260px] mt-8 text-color1/50' >- Innovative Solutions</p>
+                <p className='font-extrabold text-4xl'>Thoughtful Desion</p>
+                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>At our studio, we believe that a well-desined interior car enhance your everyday</p>
+                <p className='text-xs w-[260px] mt-8 text-color1/50' >Exceptional Craftsmanship</p>
               </div>
 
             </div>
@@ -72,9 +72,9 @@ function App() {
 
               <div className="text-color3 absolute bottom-10">
 
-                <p className='font-extrabold text-4xl'>New York's Premier</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color3/50'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta consequuntur amet. Aut velit consectetur eligendi vero illum earum. Inventore odit,</p>
-                <p className='text-xs w-[260px] mt-8 text-color3/50' >- Innovative Solutions</p>
+                <p className='font-extrabold text-4xl'>Designing For You</p>
+                <p className='text-[14px] w-[260px] mt-4 text-color3/50'>Our them of experienced designers is passionate about collaborating with clients</p>
+                <p className='text-xs w-[260px] mt-8 text-color3/50' >Elevatin Lifestyles</p>
               </div>
 
             </div>
@@ -87,25 +87,25 @@ function App() {
         <section className='p-10 lg:px-12'>
           <div className="flex justify-between py-5">
             <p>Featured Project</p>
-            <p>Ore</p>
+            
           </div>
           <section className=' lg:flex *:mb-5 lg:*:mb-0 gap-5 py-10'>
             <div className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
               <p className='text-xl font-bold  text-color1'>Living Room</p>
             </div>
             <div className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
-              <p className='text-xl font-bold  text-color1'>Living Room</p>
+              <p className='text-xl font-bold  text-color1'>Bedroom</p>
             </div>
             <div className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
-              <p className='text-xl font-bold  text-color3'>Living Room</p>
+              <p className='text-xl font-bold  text-color3'>Dining</p>
             </div>
             <div className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
-              <p className='text-xl font-bold  text-color3'>Living Room</p>
+              <p className='text-xl font-bold  text-color3'>Home</p>
             </div>
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
               <h2 className='mb-4'>Our Process</h2>
-              <p className=' text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem modi minima ipsam id! Dolorem eos amet velit nulla, saepe placeat nam atque aliquid itaque. Quisquam iusto omnis provident laboriosam.</p>
-              <p className='mt-3'>Discover More.</p>
+              <p className=' text-color3/60'>At Som soni. w take pride in our thoughtful approach to interior design, guiding clients through every step of the process to ensure their vision is brought to life seamlessly.</p>
+              <p className='mt-3'>Discover More</p>
             </div>
           </section>
         </section>
@@ -119,7 +119,7 @@ function App() {
               <div className="lg:w-1/2 w-full">
                 <div className="bg-color2  h-[30rem] rounded-lg"></div>
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
-                <p className='text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className='text-color3/60'>Immerse yourself in our hospitality portfolio, where we craft welcoming environments that.</p>
                 <div className="flex justify-between mt-2" >
                   <p className='text-color3/60'>Explore</p>
                   <button className='bg-color2 px-4 rounded-full text-color3 '>
@@ -130,11 +130,11 @@ function App() {
               <div className="lg:w-1/2 w-full">
                 <div className="bg-color2  h-[30rem] rounded-lg"></div>
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
-                <p className='text-color3/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className='text-color3/60'>Our design team specializes in designing sophisticated and comfortable guest suites that </p>
                 <div className="flex justify-between mt-2">
-                  <p className='text-color3/60'>Explore</p>
+                  <p className='text-color3/60'>Discover</p>
                   <button className='bg-color2 px-4 rounded-full text-color3 '>
-                    Learn More
+                    Book Now
                   </button>
                 </div>
               </div>
@@ -148,10 +148,10 @@ function App() {
             {/* <img src="" alt="" /> */}
             <div className="max-w-[300px] text-white">
               <h2 className='font-medium mt-8 lg:mt-0 text-xl'>About Us</h2>
-              <p className='text-white/50 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus porro tempora doloremque blanditiis voluptatum nam enim. Dignissimos consequuntur quia tempore blanditiis? Eos, vero suscipit impedit iusto odio quia voluptas optio!</p>
+              <p className='text-white/50 '>At som soni, we are a team of passionate and experienced interior designers dedicated to creating exceptional living and working spaces that reflect the unique character</p>
               <h2 className='mt-6 mb-3 text-lg'>Meet Our Founder</h2>
-              <p className='text-white/50'>Lorem ipsum dolor sit amet consectetur, Suscipit ullam, ea harum</p>
-              <p className='text-white/50 text-sm mt-4'> illum nihil vitae dolores, porro possimus, corrupti ratione eligendi voluptatibus laudantium incidunt? Quidem rerum cum unde sequi velit?</p>
+              <p className='text-white/50'>With a keen eye for detail and a deep understanding of</p>
+              <p className='text-white/50 text-sm mt-4'> From selecting the perfect color palette to curating furnishings</p>
             </div>
           </section>
 
@@ -174,9 +174,15 @@ function App() {
           </div>
           <section className='flex gap-4 lg:gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white"> add</div>
-            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white">add</div>
-            <div className="max-w-[35rem] w-full h-[8rem] max-h-[35rem] bg-white">add</div>
+            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white"> 
+             add
+            </div>
+            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white">
+            add
+            </div>
+            <div className="max-w-[35rem] w-full h-[8rem] max-h-[35rem] bg-white">
+            add
+            </div>
           </section>
         </section>
         {/* section 6 Our Services */}
@@ -184,9 +190,18 @@ function App() {
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='lg:flex *:mb-5 lg:*:mb-0  gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6"></div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <p>Space Planning</p>
+            <p>Interior Design</p>
+            </div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <p>Project Management</p>
+            <p>Discover More</p>
+            </div>
+            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <p>Sustainability</p>
+            <p>Eco-Friendly</p>
+            </div>
           </section>
         </section>
         {/* section 7 FAQs */}
@@ -195,8 +210,8 @@ function App() {
             <div className="lg:max-w-[70%]">
               <span className='text-color2'>FAQs</span>
               <p className=' text-4xl lg:text-6xl mt-7 mb-10 text-white'>Frequently Asked Qunctions</p>
-              <p className='my-8 text-white/70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam iusto molestias dignissimos molestiae dolore. Nostrum dolore </p>
-              <p className='mb-10 text-white/30'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam iusto molestias dignissimos molestiae dolore. Nostrum dolore </p>
+              <p className='my-8 text-white/70'>Have questions about our interior design services or the design process? Check out our FAQs section to find the answers you're </p>
+              <p className='mb-10 text-white/30'>If you can't find the information you need, don't hesitate to reach out to our team. We're here to guide you through every step of your interior design journey and ensure your vision </p>
 
               <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contect Us</p></button>
             </div>
@@ -215,7 +230,7 @@ function App() {
             <p className='text-color2 m-5'>Quick Links</p>
             <div className="bg-color6 p-5 px-10 rounded-xl  lg:max-w-[400px]">
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
-              <p className='text-white/50'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, maiores molestiae architecto quod nobis adipisci impedit omnis repellendus blanditiis amet quasi repellat libetore quas?</p>
+              <p className='text-white/50'>Discover our portfolio, learn about our services, and get in touch to start transforming your living or working space today</p>
             </div>
               <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contect</button>
           </div>
