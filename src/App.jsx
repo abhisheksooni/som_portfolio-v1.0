@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 
 
 import CustomSlider from "./components/costomSlider/custom.slider"
+import { som } from './Imports/Images'
 
 function App() {
 
@@ -158,14 +159,18 @@ function App() {
           {/* right */}
           <section className='bg-color3 lg:w-[33%] py-16 h-full flex items-center justify-center flex-col p-5'>
 
-            <div className="rounded-full w-[26rem] h-[26rem] lg:w-[250px] lg:h-[250px] bg-white "></div>
+            <div className="rounded-full w-[26rem] h-[26rem] lg:w-[250px] lg:h-[250px] bg-white ">
+              <img className='rounded-full'  src={som} alt="" />
+              
+            </div>
+            <p className='text-white text-xl mt-3 text-white/50 mb-4'>Som Soni</p>
             {/* <img src="" alt="" /> */}
-            <div className="max-w-[300px] text-white">
+            <div className="max-w-[430px] text-white">
               <h2 className='font-medium mt-8 lg:mt-0 text-xl'>About Us</h2>
-              <p className='text-white/50 '>At som soni, we are a team of passionate and experienced interior designers dedicated to creating exceptional living and working spaces that reflect the unique character</p>
+              <p className='text-white/50 mt-2'>At AS Renderings, we are a team of passionate interior designers and 3D visualizers dedicated to transforming spaces into exceptional living and working environments. We specialize in 3D visualization, detailed space planning, and color selection to bring your ideas to life. Our commitment is to deliver designs that blend creativity with functionality, ensuring each project reflects a unique character and style.</p>
               <h2 className='mt-6 mb-3 text-lg'>Meet Our Founder</h2>
-              <p className='text-white/50'>With a keen eye for detail and a deep understanding of</p>
-              <p className='text-white/50 text-sm mt-4'> From selecting the perfect color palette to curating furnishings</p>
+              <p className='text-white/50'>Som Soni, the creative mind behind AS Renderings, brings a keen eye for detail and a deep understanding of design aesthetics. With a background in interior design and expertise in 3D visualization, Somya is dedicated to crafting immersive environments that resonate with functionality and style. From selecting the perfect color palette to curating every detail, his vision is to create spaces that inspire and delight.</p>
+              {/* <p className='text-white/50 text-sm mt-4'> From selecting the perfect color palette to curating furnishings</p> */}
             </div>
           </section>
 
