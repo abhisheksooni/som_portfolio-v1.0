@@ -9,6 +9,7 @@ import som from '../Images/som.jpg'
 import som1 from '../Images/som1.png'
 import kitchen from '../Images/kitchen.jpg'
 import project1 from '../Images/Projects/p2.jpg'
+import aslogo from '../Images/aslogo.png'
 
 
 export{
@@ -23,4 +24,5 @@ export{
     som1,
     kitchen,
     project1,
+    aslogo,
 }

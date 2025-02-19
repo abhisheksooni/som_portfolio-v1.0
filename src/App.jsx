@@ -2,11 +2,36 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Carousel } from 'react-responsive-carousel'
+
 import { useEffect } from 'react'
-import { project1 } from './Imports/Images'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+
+import CustomSlider from "./components/costomSlider/custom.slider"
+
 function App() {
+
+  const images = [
+    {
+      imgURL:
+        "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      imgAlt: "img-1"
+    },
+    {
+      imgURL:
+        "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      imgAlt: "img-2"
+    },
+    {
+      imgURL:
+        "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      imgAlt: "img-3"
+    },
+    {
+      imgURL:
+        "https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      imgAlt: "img-4"
+    }
+  ];
 
 
 
@@ -18,27 +43,16 @@ function App() {
     <>
       <section  className=''>
         {/* section 1 */}
-        <section>
-          <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} interval={2000} >
+        <CustomSlider>
+        {images.map((image, index) => {
+          return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+        })}
+      </CustomSlider>
+<section>
+<section>
 
-            <div >
-              <img src={project1} alt="" />
-              {/* <p className="legend">Legend 1</p> */}
-            </div>
-            <div >
-              <img src={project1} alt="" />
-              {/* <p className="legend">Legend 2</p> */}
-            </div>
-            <div >
-              <img src={project1} alt="" />
-              {/* <p className="legend">Legend 3</p> */}
-            </div>
-            <div >
-              <img src={project1} alt="" />
-              {/* <p className="legend">Legend 4</p> */}
-            </div>
-          </Carousel>
-        </section>
+</section>
+</section> 
         {/* section 2 */}
         <section>
           <p>Crafting Inspiring Interiors</p>
