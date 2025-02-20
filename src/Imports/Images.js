@@ -8,8 +8,16 @@ import img7 from '../Images/skills_icons/sketchup.png'
 import som from '../Images/som.jpg'
 import som1 from '../Images/som1.png'
 import kitchen from '../Images/kitchen.jpg'
-import project1 from '../Images/Projects/p2.jpg'
+import project1 from '../Images/Projects/p2.png'
 import aslogo from '../Images/aslogo.png'
+import t1 from '../Images/thambnail/p1.jpg'
+import t2 from '../Images/thambnail/p2.jpeg'
+import t3 from '../Images/thambnail/p3.png'
+
+import img11 from '../Images/getstart/img1.jpg'
+import img12 from '../Images/getstart/img2.jpg'
+import img13 from '../Images/getstart/img3.jpg'
+
 
 
 export{
@@ -25,4 +33,13 @@ export{
     kitchen,
     project1,
     aslogo,
+
+    // thambnail
+    t1,
+    t2,
+    t3,
+    // getstart
+    img11,
+    img12,
+    img13,
 }

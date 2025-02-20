@@ -7,31 +7,24 @@ import { useEffect } from 'react'
 
 
 import CustomSlider from "./components/costomSlider/custom.slider"
-import { som } from './Imports/Images'
+import { project1, som, t1, t2, t3 } from './Imports/Images'
 
 function App() {
 
   const images = [
     {
-      imgURL:
-        "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-      imgAlt: "img-1"
+      imgURL: t1,
+      imgAlt: t1
     },
     {
-      imgURL:
-        "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-      imgAlt: "img-2"
+      imgURL: t2,
+      imgAlt: t2
     },
     {
-      imgURL:
-        "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-      imgAlt: "img-3"
+      imgURL: t3,
+      imgAlt: t3
     },
-    {
-      imgURL:
-        "https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-      imgAlt: "img-4"
-    }
+
   ];
 
 
@@ -42,22 +35,21 @@ function App() {
 
   return (
     <>
-      <section  className=''>
+      <section className=''>
         {/* section 1 */}
-        <CustomSlider>
-        {images.map((image, index) => {
-          return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
-        })}
-      </CustomSlider>
-<section>
-<section>
-
-</section>
-</section> 
-        {/* section 2 */}
         <section>
-          <p>Crafting Inspiring Interiors</p>
-          <h2>Elevating Spaces</h2>
+          <CustomSlider>
+            {images.map((image, index) => {
+              return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+            })}
+          </CustomSlider>
+        </section>
+        {/* section 2 Elevating Spaces */}
+        <section>
+          <div className="text-center my-4">
+          <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
+          <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
+          </div>
           <div className=" lg:flex  *:mb-5 lg:mb-0 gap-5 p-8 justify-center lg:*:w-[33rem] *:h-[35rem]">
 
             <div className="bg-color3 rounded-md p-10 relative">
@@ -101,38 +93,43 @@ function App() {
         {/* section 3 Featured project */}
         <section className='p-10 lg:px-12'>
           <div className="flex justify-between py-5">
-            <p>Featured Project</p>
-            
+          <p className='text-color3/60 text-xl'>Featured Project</p>
+
+
           </div>
-          <section className=' lg:flex *:mb-5 lg:*:mb-0 gap-5 py-10'>
-            <div className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+          <section className=' lg:flex *:mb-5 lg:*:mb-0 gap-5 py-10 '>
+            <div className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color1'>Living Room</p>
             </div>
-            <div className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color1'>Bedroom</p>
             </div>
-            <div className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color3'>Dining</p>
             </div>
-            <div className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center">
+            <div className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color3'>Home</p>
             </div>
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
               <h2 className='mb-4'>Our Process</h2>
               <p className=' text-color3/60'>At Som soni. w take pride in our thoughtful approach to interior design, guiding clients through every step of the process to ensure their vision is brought to life seamlessly.</p>
-              <p className='mt-3'>Discover More</p>
+              {/* <p className='mt-3'>Discover More</p> */}
             </div>
           </section>
         </section>
-        {/* section 4 */}
+        {/* section 4  Luxurious Retreats & about us*/}
         <section id='about' className=' lg:flex flex-wrap lg:h-[60rem]'>
           {/* left */}
-          <section className='bg-white p-14 lg:w-[67%] h-full '>
+          <section className='bg-white p-10 lg:p-14 lg:w-[67%] h-full '>
             <h2 className='text-color2'>Hospitality Spaces</h2>
-            <h2 className='text-7xl mt-4'>Luxurious Retreats</h2>
-            <div className=" flex gap-7 mt-10 flex-wrap ">
-              <div className="lg:w-1/2 w-full">
-                <div className="bg-color2  h-[30rem] rounded-lg"></div>
+            <h2 className='text-7xl mt-4 unkempt-bold'>Luxurious Retreats</h2>
+
+            <div className=" flex gap-7 mt-10 flex-col md:flex-row ">
+              <div className="">
+                <div className="image1 w-full lg:w-[570px] h-[480px] rounded-lg">
+         
+                </div>
+
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
                 <p className='text-color3/60'>Immerse yourself in our hospitality portfolio, where we craft welcoming environments that.</p>
                 <div className="flex justify-between mt-2" >
@@ -142,8 +139,11 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="lg:w-1/2 w-full">
-                <div className="bg-color2  h-[30rem] rounded-lg"></div>
+              <div className="">
+              <div className="image2 w-full lg:w-[570px]  h-[480px] rounded-lg">
+                  {/* <img className='image2 w-[570px] h-[480px] rounded-lg ' src={t1} alt={t1} /> */}
+                </div>
+
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
                 <p className='text-color3/60'>Our design team specializes in designing sophisticated and comfortable guest suites that </p>
                 <div className="flex justify-between mt-2">
@@ -160,8 +160,8 @@ function App() {
           <section className='bg-color3 lg:w-[33%] py-16 h-full flex items-center justify-center flex-col p-5'>
 
             <div className="rounded-full w-[26rem] h-[26rem] lg:w-[250px] lg:h-[250px] bg-white ">
-              <img className='rounded-full'  src={som} alt="" />
-              
+              <img className='rounded-full' src={som} alt="" />
+
             </div>
             <p className='text-white text-xl mt-3 text-white/50 mb-4'>Som Soni</p>
             {/* <img src="" alt="" /> */}
@@ -191,42 +191,45 @@ function App() {
 
             </div>
           </div>
-          <section className='flex gap-4 lg:gap-5 justify-center *:rounded-md mt-5'>
+          <section className='flex flex-wrap gap-4 lg:gap-5 justify-center *:rounded-md mt-5'>
 
-            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white"> 
-             add
+            <div className=" img11 max-w-[35rem] w-full h-[23rem] bg-white">
+           
             </div>
-            <div className="max-w-[35rem] w-full max-h-[35rem] bg-white">
-            add
+            <div className=" img12 max-w-[35rem] w-full  h-[23rem] bg-white">
+              
             </div>
-            <div className="max-w-[35rem] w-full h-[8rem] max-h-[35rem] bg-white">
-            add
+            <div className=" img13 max-w-[35rem] w-full h-[23rem]  bg-white">
+              
             </div>
           </section>
         </section>
+
         {/* section 6 Our Services */}
         <section id='services' className='bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='lg:flex *:mb-5 lg:*:mb-0  gap-5 justify-center *:rounded-md mt-5'>
 
             <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
-            <p>Space Planning</p>
-            <p>Interior Design</p>
+              <p>Space Planning</p>
+              <p>Interior Design</p>
             </div>
             <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
-            <p>Project Management</p>
-            <p>Discover More</p>
+              <p>Project Management</p>
+              <p>Discover More</p>
             </div>
             <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
-            <p>Sustainability</p>
-            <p>Eco-Friendly</p>
+              <p>Sustainability</p>
+              <p>Eco-Friendly</p>
             </div>
           </section>
         </section>
+
         {/* section 7 FAQs */}
         <section className='bg-color3 flex  w-full flex-wrap lg:h-[50rem] pt-6 py-10'>
-          <div className="lg:w-[60%] p-12 flex flex-col justify-center">
-            <div className="lg:max-w-[70%]">
+
+          <div className="lg:w-[50%] p-12 flex flex-col justify-center">
+            <div className="lg:max-w-[90%]">
               <span className='text-color2'>FAQs</span>
               <p className=' text-4xl lg:text-6xl mt-7 mb-10 text-white'>Frequently Asked Qunctions</p>
               <p className='my-8 text-white/70'>Have questions about our interior design services or the design process? Check out our FAQs section to find the answers you're </p>
@@ -235,15 +238,15 @@ function App() {
               <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contect Us</p></button>
             </div>
           </div>
-          <div className="lg:w-[40%] w-full h-[30rem] bg-white">
-            Image add</div>
+          <div className=" image1 lg:w-[49%] w-full h-[40rem] rounded-xl bg-white ">
+            </div>
         </section>
         {/* section 8 Quick Link */}
         <section className='lg:flex bg-color3 gap-8 lg:py-16 px-6 lg:px-0 justify-center'>
-          <div className="flex gap-5 *:rounded-md">
-            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem]  bg-white">h</div>
-            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem] bg-white"></div>
-            <div className="max-w-[20rem] max-h-[20rem] w-full h-[8rem] bg-white"></div>
+          <div className="flex flex-wrap justify-center gap-5 *:rounded-md">
+            <div className="md:w-[20rem] max-h-[20rem] img11 w-[8rem] h-[8rem] md:h-[20rem]  bg-white">h</div>
+            <div className="md:w-[20rem] max-h-[20rem] img12 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
+            <div className="md:w-[20rem] max-h-[20rem] img13 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
           </div>
           <div className="">
             <p className='text-color2 m-5'>Quick Links</p>
@@ -251,7 +254,7 @@ function App() {
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
               <p className='text-white/50'>Discover our portfolio, learn about our services, and get in touch to start transforming your living or working space today</p>
             </div>
-              <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contect</button>
+            <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contect</button>
           </div>
         </section>
       </section>
