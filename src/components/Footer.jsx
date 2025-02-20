@@ -21,7 +21,7 @@ function Footer() {
       <section className='bg-color3 p-5 text-white flex items-center justify-between gap-6 py-10 px-8 lg:px-20 '>
         <div className=""><img className='w-16' src={aslogo} alt="" />
         </div>
-        <div className="flex gap-4 hover:*:text-color2">
+        <div className="flex gap-4 hover:*:text-color2 *:cursor-pointer">
 
 
           {/* <div className="mt-5 hover:*:scale-95 *:duration-300  flex  justify-center *:items-center  gap-4 *:rounded-2xl"> */}
