@@ -50,12 +50,13 @@ function App() {
           <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
           <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
           </div>
-          <div className=" lg:flex  *:mb-5 lg:mb-0 gap-5 p-8 justify-center lg:*:w-[33rem] *:h-[35rem]">
+          <div className=" lg:flex *:mb-5 lg:mb-0 gap-5 p-8 justify-center lg:*:w-[33rem] ">
 
-            <div className="bg-color3 rounded-md p-10 relative">
-              <div className="bg-white rounded-full p-1 w-[5rem] h-[5rem]"> </div>
+            <div className="bg-color3 rounded-md p-10 
+            ">
+         
 
-              <div className="text-color1 absolute bottom-10">
+              <div className="text-color1  bottom-10">
 
                 <p className='font-extrabold text-4xl'>New York's Premier</p>
                 <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Welcome to our Interior Design Porfolio, wher we transform living spaces into personalized</p>
@@ -63,10 +64,11 @@ function App() {
               </div>
 
             </div>
-            <div className="bg-color2 rounded-md p-10 relative">
-              <div className="bg-white rounded-full p-1 w-[5rem] h-[5rem]"> </div>
+            <div className="bg-color2 rounded-md p-10 
+            ">
+              
 
-              <div className="text-white absolute bottom-10">
+              <div className="text-white  bottom-10">
 
                 <p className='font-extrabold text-4xl'>Thoughtful Desion</p>
                 <p className='text-[14px] w-[260px] mt-4 text-color1/50'>At our studio, we believe that a well-desined interior car enhance your everyday</p>
@@ -74,10 +76,10 @@ function App() {
               </div>
 
             </div>
-            <div className="bg-white rounded-md p-10 relative">
-              <div className="bg-color3 rounded-full p-1 w-[5rem] h-[5rem]"> </div>
+            <div className="bg-white rounded-md p-10 ">
+          
 
-              <div className="text-color3 absolute bottom-10">
+              <div className="text-color3  bottom-10">
 
                 <p className='font-extrabold text-4xl'>Designing For You</p>
                 <p className='text-[14px] w-[260px] mt-4 text-color3/50'>Our them of experienced designers is passionate about collaborating with clients</p>
@@ -91,7 +93,7 @@ function App() {
           </div>
         </section>
         {/* section 3 Featured project */}
-        <section className='p-10 lg:px-12'>
+        <section className='p-3 lg:px-12'>
           <div className="flex justify-between py-5">
           <p className='text-color3/60 text-xl'>Featured Project</p>
 
@@ -243,7 +245,7 @@ function App() {
         </section>
         {/* section 8 Quick Link */}
         <section className='lg:flex bg-color3 gap-8 lg:py-16 px-6 lg:px-0 justify-center'>
-          <div className="flex flex-wrap justify-center gap-5 *:rounded-md">
+          <div className="flex flex-wrap  gap-5 *:rounded-md">
             <div className="md:w-[20rem] max-h-[20rem] img11 w-[8rem] h-[8rem] md:h-[20rem]  bg-white">h</div>
             <div className="md:w-[20rem] max-h-[20rem] img12 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
             <div className="md:w-[20rem] max-h-[20rem] img13 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
