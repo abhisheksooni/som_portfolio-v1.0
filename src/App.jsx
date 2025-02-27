@@ -209,7 +209,7 @@ function App() {
         </section>
 
         {/* section 6 Our Services */}
-        <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
+        {/* <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='oberdd snap-x overflow-x-scrol flex *:mb-5 lg:*:mb-0  gap-5 justify-centerg *:rounded-md mt-5 *:w-[350px] '>
 
@@ -226,7 +226,7 @@ function App() {
               <p>Eco-Friendly</p>
             </div>
           </section>
-        </section>
+        </section> */}
 
         {/* section 7 FAQs */}
         <section className='bg-color3 flex  w-full flex-wrap lg:h-[50rem] pt-6 py-10'>
