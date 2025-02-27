@@ -51,7 +51,7 @@ function App() {
             <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
           </div>
 
-          <div className=" oberdd snap-x  overflow-x-scroll flex *:mb-5 lg:mb-0 gap-5 p-8 justify-centerx lg:*:w-[33rem] ">
+          <div className=" oberdd snap-x snap-mandatory *:snap-always overflow-x-scroll flex *:mb-5 lg:mb-0 gap-5 p-8 lg:justify-center lg:*:w-[33rem] ">
 
             <div className=" snap-center bg-color3 rounded-md p-10 
             ">
@@ -59,9 +59,9 @@ function App() {
 
               <div className=" text-color1  bottom-10">
 
-                <p className='font-extrabold text-4xl'>New York's Premier</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Welcome to our Interior Design Porfolio, wher we transform living spaces into personalized</p>
-                <p className='text-xs w-[260px] mt-8 text-color1/50' >Innovative Solutions</p>
+                <p className='font-extrabold text-4xl'>Welcome to AS Renderings</p>
+                <p className='text-[16px]  mt-5 text-color1/50'>Step into a world where creativity meets functionality. At AS Renderings, we bring your interior dreams to life with stunning 3D visualizations and expert design solutions.</p>
+               
               </div>
 
             </div>
@@ -71,9 +71,8 @@ function App() {
 
               <div className="text-white  bottom-10">
 
-                <p className='font-extrabold text-4xl'>Thoughtful Desion</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color1/50'>At our studio, we believe that a well-desined interior car enhance your everyday</p>
-                <p className='text-xs w-[260px] mt-8 text-color1/50' >Exceptional Craftsmanship</p>
+                <p className='font-extrabold text-4xl'>Transforming Spaces, Elevating Lifestyles</p>
+                <p className='text-[16px]  mt-5 text-color1/50'>Welcome to our interior design studio, where every detail is crafted with passion. Explore our innovative concepts and immersive 3D renderings designed to inspire.</p>
               </div>
 
             </div>
@@ -82,9 +81,8 @@ function App() {
 
               <div className="text-color3  bottom-10">
 
-                <p className='font-extrabold text-4xl'>Designing For You</p>
-                <p className='text-[14px] w-[260px] mt-4 text-color3/50'>Our them of experienced designers is passionate about collaborating with clients</p>
-                <p className='text-xs w-[260px] mt-8 text-color3/50' >Elevatin Lifestyles</p>
+                <p className='font-extrabold text-4xl'>Designing Your Vision, Perfecting Every Detail</p>
+                <p className='text-[16px]  mt-5 text-color3/50'>Your space tells a story, and we’re here to make it extraordinary. From concept to visualization, AS Renderings delivers bespoke designs tailored to your style.</p>
               </div>
 
             </div>
@@ -123,7 +121,7 @@ function App() {
         {/* section 4  Luxurious Retreats & about us*/}
         <section id='about' className=' lg:flex flex-wrap lg:h-[60rem]'>
           {/* left */}
-          <section className='bg-white p-10 lg:p-14 lg:w-[67%] h-full '>
+          <section className='bg-white p-5 lg:p-14 lg:w-[67%] h-full '>
             <h2 className='text-color2'>Hospitality Spaces</h2>
             <h2 className='text-7xl mt-4 unkempt-bold'>Luxurious Retreats</h2>
 
@@ -190,7 +188,7 @@ function App() {
             <h2 className='text-color5 text-3xl'>Ready to Transform Your</h2>
             <div className=" flex gap-3 mt-5">
               <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Get Started</p></button>
-              <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Contect Us</p></button>
+              <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Contact Us</p></button>
 
             </div>
           </div>
@@ -209,7 +207,7 @@ function App() {
         </section>
 
         {/* section 6 Our Services */}
-        {/* <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
+        <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='oberdd snap-x overflow-x-scrol flex *:mb-5 lg:*:mb-0  gap-5 justify-centerg *:rounded-md mt-5 *:w-[350px] '>
 
@@ -226,7 +224,7 @@ function App() {
               <p>Eco-Friendly</p>
             </div>
           </section>
-        </section> */}
+        </section>
 
         {/* section 7 FAQs */}
         <section className='bg-color3 flex  w-full flex-wrap lg:h-[50rem] pt-6 py-10'>
@@ -238,15 +236,15 @@ function App() {
               <p className='my-8 text-white/70'>Have questions about our interior design services or the design process? Check out our FAQs section to find the answers you're </p>
               <p className='mb-10 text-white/30'>If you can't find the information you need, don't hesitate to reach out to our team. We're here to guide you through every step of your interior design journey and ensure your vision </p>
 
-              <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contect Us</p></button>
+              <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contact Us</p></button>
             </div>
           </div>
           <div className=" image1 lg:w-[49%] m-4 md:m-0 w-full h-[40rem] rounded-xl bg-white ">
           </div>
         </section>
         {/* section 8 Quick Link */}
-        <section className='lg:flex bg-color3 gap-8 lg:py-16 px-6 lg:px-0 justify-center'>
-          <div className="flex flex-wrap  gap-5 *:rounded-md">
+        <section className='lg:flex bg-color3 gap-8 lg:py-16 px-4 lg:px-0 justify-center'>
+          <div className="flex  gap-3 *:rounded-md">
             <div className="md:w-[20rem] max-h-[20rem] img11 w-[8rem] h-[8rem] md:h-[20rem]  bg-white">h</div>
             <div className="md:w-[20rem] max-h-[20rem] img12 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
             <div className="md:w-[20rem] max-h-[20rem] img13 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
@@ -257,7 +255,7 @@ function App() {
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
               <p className='text-white/50'>Discover our portfolio, learn about our services, and get in touch to start transforming your living or working space today</p>
             </div>
-            <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contect</button>
+            <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contact</button>
           </div>
         </section>
       </section>
