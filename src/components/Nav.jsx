@@ -28,12 +28,12 @@ function Nav() {
     <>
       <section className='relative'>
         <nav className='flex items-center justify-between px-10 py-5'>
-          <div className="flex items-center ">
+          <NavLink to={"/"} className="flex items-center ">
             <div className=" bg-color6/70 rounded-full">
               <img className='w-10 ' src={logoicon} alt="" />
             </div>
             <p className='ml-2'>Rending</p>
-          </div>
+          </NavLink>
           <div className="hidden lg:flex">
             <ul className='flex items-center gap-8 hover:*:text-color2 font-semibold text-lg *:duration-150'>
               <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/"}>
