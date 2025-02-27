@@ -6,7 +6,7 @@ import "../App.css"
 function Nav() {
 
   const [menu, setmenu] = useState(false)
-  const [contect, setContect] = useState(false)
+ 
 
   const handleScrollToServices = (e) => {
 
@@ -42,14 +42,22 @@ function Nav() {
               <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
                 <li>Projects</li>
               </NavLink>
-              <Link onClick={() => handleScrollToServices("services")}>
+              {/* <Link onClick={() => handleScrollToServices("services")}>
                 <li>Services</li>
-              </Link>
-              <Link onClick={() => handleScrollToServices("about")}>
+              </Link> */}
+              
+              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/services"}>
+                <li>Services</li>
+              </NavLink>
+              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/about"}>
+                <li>About Us</li>
+              </NavLink>
+
+              {/* <Link onClick={() => handleScrollToServices("about")}>
                 <li>About</li>
-              </Link>
-              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contect"}>
-                <li>Contect</li>
+              </Link> */}
+              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contact"}>
+                <li>Contact Us</li>
               </NavLink>
 
               <button className='bg-color3 text-white p-2 px-7'>Portfolio</button>
@@ -84,16 +92,16 @@ function Nav() {
             <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
               <li>Projects</li>
             </NavLink>
-            {/* <Link onClick={() => handleScrollToServices("services")}>
+            <Link onClick={() => handleScrollToServices("services")}>
               <li>Services</li>
             </Link>
             <Link onClick={() =>{ handleScrollToServices("about"),
               menu(false)
             }}>
-              <li>About</li>
-            </Link> */}
-            <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contect"}>
-              <li>Contect</li>
+              <NavLink>About</NavLink>
+            </Link>
+            <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contact"}>
+              <li>Contact</li>
             </NavLink>
 
             <button className='bg-color3 text-white p-2 px-7'>Portfolio</button>
