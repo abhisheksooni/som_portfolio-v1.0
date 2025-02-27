@@ -181,7 +181,7 @@ function Projects() {
       {/* projects */}
 
       {/* <section className=' gridp w-full flexz flex-wrap  *:rounded-lg '> */}
-      <div className=" columns-2 gap-3  sm:columns-3xs md:columns-4  ">
+      <div className=" columns-2 gap-3  md:columns-3 px-5 md:px-10 ">
 
         {
           projectsimages.map((projects) => (

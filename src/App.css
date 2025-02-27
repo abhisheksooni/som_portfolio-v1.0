@@ -178,3 +178,8 @@
   background-size: cover;
   background-position: center;
 }
+
+
+.oberdd::-webkit-scrollbar {
+  display: none;
+}

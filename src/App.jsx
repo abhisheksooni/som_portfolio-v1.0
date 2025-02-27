@@ -47,16 +47,17 @@ function App() {
         {/* section 2 Elevating Spaces */}
         <section>
           <div className="text-center my-4">
-          <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
-          <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
+            <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
+            <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
           </div>
-          <div className=" lg:flex *:mb-5 lg:mb-0 gap-5 p-8 justify-center lg:*:w-[33rem] ">
 
-            <div className="bg-color3 rounded-md p-10 
+          <div className=" oberdd snap-x  overflow-x-scroll flex *:mb-5 lg:mb-0 gap-5 p-8 justify-centerx lg:*:w-[33rem] ">
+
+            <div className=" snap-center bg-color3 rounded-md p-10 
             ">
-         
 
-              <div className="text-color1  bottom-10">
+
+              <div className=" text-color1  bottom-10">
 
                 <p className='font-extrabold text-4xl'>New York's Premier</p>
                 <p className='text-[14px] w-[260px] mt-4 text-color1/50'>Welcome to our Interior Design Porfolio, wher we transform living spaces into personalized</p>
@@ -64,9 +65,9 @@ function App() {
               </div>
 
             </div>
-            <div className="bg-color2 rounded-md p-10 
+            <div className=" snap-center bg-color2 rounded-md p-10 
             ">
-              
+
 
               <div className="text-white  bottom-10">
 
@@ -76,8 +77,8 @@ function App() {
               </div>
 
             </div>
-            <div className="bg-white rounded-md p-10 ">
-          
+            <div className="snap-center bg-white rounded-md p-10 ">
+
 
               <div className="text-color3  bottom-10">
 
@@ -95,7 +96,7 @@ function App() {
         {/* section 3 Featured project */}
         <section className='p-3 lg:px-12'>
           <div className="flex justify-between py-5">
-          <p className='text-color3/60 text-xl'>Featured Project</p>
+            <p className='text-color3/60 text-xl'>Featured Project</p>
 
 
           </div>
@@ -129,7 +130,7 @@ function App() {
             <div className=" flex gap-7 mt-10 flex-col md:flex-row ">
               <div className="">
                 <div className="image1 w-full lg:w-[570px] h-[480px] rounded-lg">
-         
+
                 </div>
 
                 <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
@@ -142,7 +143,7 @@ function App() {
                 </div>
               </div>
               <div className="">
-              <div className="image2 w-full lg:w-[570px]  h-[480px] rounded-lg">
+                <div className="image2 w-full lg:w-[570px]  h-[480px] rounded-lg">
                   {/* <img className='image2 w-[570px] h-[480px] rounded-lg ' src={t1} alt={t1} /> */}
                 </div>
 
@@ -196,31 +197,31 @@ function App() {
           <section className='flex flex-wrap gap-4 lg:gap-5 justify-center *:rounded-md mt-5'>
 
             <div className=" img11 max-w-[35rem] w-full h-[23rem] bg-white">
-           
+
             </div>
             <div className=" img12 max-w-[35rem] w-full  h-[23rem] bg-white">
-              
+
             </div>
             <div className=" img13 max-w-[35rem] w-full h-[23rem]  bg-white">
-              
+
             </div>
           </section>
         </section>
 
         {/* section 6 Our Services */}
-        <section id='services' className='bg-color3 pb-8 lg:pb-16 px-6 '>
+        <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
-          <section className='lg:flex *:mb-5 lg:*:mb-0  gap-5 justify-center *:rounded-md mt-5'>
+          <section className='oberdd snap-x overflow-x-scrol flex *:mb-5 lg:*:mb-0  gap-5 justify-centerg *:rounded-md mt-5 *:w-[350px] '>
 
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <div className=" snap-center   lg:h-[35rem]  h-[26rem] bg-color6">
               <p>Space Planning</p>
               <p>Interior Design</p>
             </div>
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <div className="snap-center  lg:h-[35rem]  h-[26rem] bg-color6">
               <p>Project Management</p>
               <p>Discover More</p>
             </div>
-            <div className="lg:w-[35rem] lg:h-[35rem] w-full h-[26rem] bg-color6">
+            <div className="snap-center  lg:h-[35rem]  h-[26rem] bg-color6">
               <p>Sustainability</p>
               <p>Eco-Friendly</p>
             </div>
@@ -240,8 +241,8 @@ function App() {
               <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contect Us</p></button>
             </div>
           </div>
-          <div className=" image1 lg:w-[49%] w-full h-[40rem] rounded-xl bg-white ">
-            </div>
+          <div className=" image1 lg:w-[49%] m-4 md:m-0 w-full h-[40rem] rounded-xl bg-white ">
+          </div>
         </section>
         {/* section 8 Quick Link */}
         <section className='lg:flex bg-color3 gap-8 lg:py-16 px-6 lg:px-0 justify-center'>
