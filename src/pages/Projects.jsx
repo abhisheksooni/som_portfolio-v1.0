@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import "../App.css"
 import {
+  p10image1,
+  p10image2,
+  p10image3,
+  p10image4,
   p1image1,
   p1image2,
   p1image3,
@@ -36,19 +40,7 @@ import {
 
 function Projects() {
 
-  const projectsimages = [
-    {
-      id: 11,
-      img: p1image1
-    },
-    {
-      id: 12,
-      img: p1image2
-    },
-    {
-      id: 13,
-      img: p1image3
-    },
+  const bathroomimage =[
     {
       id: 21,
       img: p2image1
@@ -73,10 +65,8 @@ function Projects() {
       id: 26,
       img: p2image6
     },
-    {
-      id: 31,
-      img: p3image1
-    },
+  ]
+  const bathroom2image=[
     {
       id: 41,
       img: p4image1
@@ -101,6 +91,83 @@ function Projects() {
       id: 46,
       img: p4image6
     },
+  ]
+  const keychenimage=[
+    {
+      id: 61,
+      img: p6image1
+    },
+    {
+      id: 62,
+      img: p6image2
+    },
+  ]
+  const keycheinimage=[
+    {
+      id: 101,
+      img: p10image1
+    },
+    {
+      id: 102,
+      img: p10image2
+    },
+    {
+      id: 103,
+      img: p10image3
+    },
+    {
+      id: 104,
+      img: p10image4
+    },
+  ]
+const room=[
+  {
+    id: 91,
+    img: p9image1
+  },
+  {
+    id: 92,
+    img: p9image2
+  },
+  {
+    id: 93,
+    img: p9image3
+  },
+
+]
+const gameroom=[
+  
+  {
+    id: 81,
+    img: p8image1
+  },
+  {
+    id: 82,
+    img: p8image2
+  },
+  {
+    id: 83,
+    img: p8image3
+  },
+]
+  const projectsimages = [
+    {
+      id: 11,
+      img: p1image1
+    },
+    {
+      id: 12,
+      img: p1image2
+    },
+    {
+      id: 13,
+      img: p1image3
+    },
+    {
+      id: 31,
+      img: p3image1
+    },
+    
     {
       id: 51,
       img: p5image1
@@ -121,38 +188,8 @@ function Projects() {
       id: 55,
       img: p5image5
     },
-    {
-      id: 61,
-      img: p6image1
-    },
-    {
-      id: 62,
-      img: p6image2
-    },
-    {
-      id: 81,
-      img: p8image1
-    },
-    {
-      id: 82,
-      img: p8image2
-    },
-    {
-      id: 83,
-      img: p8image3
-    },
-    {
-      id: 91,
-      img: p9image1
-    },
-    {
-      id: 92,
-      img: p9image2
-    },
-    {
-      id: 93,
-      img: p9image3
-    },
+
+
 
   ]
 
@@ -181,11 +218,12 @@ function Projects() {
       {/* projects */}
 
       {/* <section className=' gridp w-full flexz flex-wrap  *:rounded-lg '> */}
-      <div className=" columns-2 gap-3  md:columns-3 px-5 md:px-10 ">
+      <div className=" columns-1 gap-3  md:columns-3 px-5 md:px-10 ">
 
         {
           projectsimages.map((projects) => (
             <div className='w-full h-auto mb-3' key={projects.id} >
+              <span>{projects.id}</span>
             <img className='w-full h-auto object-cover rounded-lg aspect-squar' loading="lazy" src={projects.img} />
             </div>
           ))

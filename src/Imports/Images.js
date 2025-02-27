@@ -56,6 +56,11 @@ import p9image1 from '../Images/Projects/p9/p1.jpg'
 import p9image2 from '../Images/Projects/p9/p2.jpg'
 import p9image3 from '../Images/Projects/p9/p3.jpg'
 
+import p10image1 from '../Images/Projects/p10/1ps.png'
+import p10image2 from '../Images/Projects/p10/2ps.png'
+import p10image3 from '../Images/Projects/p10/3ps.png'
+import p10image4 from '../Images/Projects/p10/4ps.png'
+
 
 
 export {
@@ -120,6 +125,10 @@ export {
     p9image2,
     p9image3,
 
+    p10image1,
+    p10image2,
+    p10image3,
+    p10image4,
 
 
 }
