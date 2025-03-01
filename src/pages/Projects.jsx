@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../App.css"
 import {
   p10image1,
@@ -35,12 +35,13 @@ import {
   p9image2,
   p9image3,
 } from '../Imports/Images'
+import { NavLink } from 'react-router-dom'
 
 
 
 function Projects() {
 
-  const bathroomimage =[
+  const bathroomimage = [
     {
       id: 21,
       img: p2image1
@@ -66,7 +67,7 @@ function Projects() {
       img: p2image6
     },
   ]
-  const bathroom2image=[
+  const bathroom2image = [
     {
       id: 41,
       img: p4image1
@@ -92,7 +93,7 @@ function Projects() {
       img: p4image6
     },
   ]
-  const keychenimage=[
+  const keychenimage = [
     {
       id: 61,
       img: p6image1
@@ -102,7 +103,7 @@ function Projects() {
       img: p6image2
     },
   ]
-  const keycheinimage=[
+  const keycheinimage = [
     {
       id: 101,
       img: p10image1
@@ -120,37 +121,37 @@ function Projects() {
       img: p10image4
     },
   ]
-const room=[
-  {
-    id: 91,
-    img: p9image1
-  },
-  {
-    id: 92,
-    img: p9image2
-  },
-  {
-    id: 93,
-    img: p9image3
-  },
+  const room = [
+    {
+      id: 91,
+      img: p9image1
+    },
+    {
+      id: 92,
+      img: p9image2
+    },
+    {
+      id: 93,
+      img: p9image3
+    },
 
-]
-const gameroom=[
-  
-  {
-    id: 81,
-    img: p8image1
-  },
-  {
-    id: 82,
-    img: p8image2
-  },
-  {
-    id: 83,
-    img: p8image3
-  },
-]
-  const projectsimages = [
+  ]
+  const home2 = [
+
+    {
+      id: 81,
+      img: p8image1
+    },
+    {
+      id: 82,
+      img: p8image2
+    },
+    {
+      id: 83,
+      img: p8image3
+    },
+  ]
+  const home1 = [
     {
       id: 11,
       img: p1image1
@@ -163,11 +164,8 @@ const gameroom=[
       id: 13,
       img: p1image3
     },
-    {
-      id: 31,
-      img: p3image1
-    },
-    
+  ]
+  const gameroom = [
     {
       id: 51,
       img: p5image1
@@ -189,9 +187,18 @@ const gameroom=[
       img: p5image5
     },
 
-
+  ]
+  const projectsimages = [
+    {
+      id: 31,
+      img: p3image1
+    },
 
   ]
+
+
+
+  const [name,setName]= useState("")
 
 
   useEffect(() => {
@@ -217,36 +224,60 @@ const gameroom=[
       </section>
       {/* projects */}
 
-      {/* <section className=' gridp w-full flexz flex-wrap  *:rounded-lg '> */}
-      <div className=" columns-1 gap-3  md:columns-3 px-5 md:px-10 ">
 
-        {
+      <div className=" columns-1  *:my-5 md:columns-3 px-5 md:px-10 ">
+
+        {/* {
           projectsimages.map((projects) => (
-            <div className='w-full h-auto mb-3' key={projects.id} >
-              <span>{projects.id}</span>
+            <div className='w-full h-auto mb-3 p-2 hover:p-2 duration-150 bg-color4 rounded-2xl' key={projects.id} >
+         
             <img className='w-full h-auto object-cover rounded-lg aspect-squar' loading="lazy" src={projects.img} />
             </div>
           ))
-        }
-        </div>
-      <section className='  max-w-[1700px] mx-auto flex justify-center gap-5 flex-wrap  w-full *:w-[500px] *:h-[100%] *:rounded-xl mb-10 px-3'>
-
-        {/* <div className=" flex flex-wrap  justify-center w-full gap-2 md:gap-5  *:rounded-lg">
-          <div className=" md:w-[700px]  w-full h-[395px] bg-color2">f</div>
-          <div className="w-full md:w-[560px] *:rounded-md flex  justify-center gap-2 md:gap-5">
-            <div className="lg:w-[280px]  w-full  h-[395px] bg-color2">g</div>
-            <div className="lg:w-[280px]  w-full h-[395px] bg-color2">h</div>
+        } */}
+        <NavLink to={`/projectshow/room`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={room[0].img} alt="" />
+          <div className=" ">
+            <span className='absolute z-20'> {room.length}</span>
           </div>
-        </div>
+        </NavLink>
 
-        <div className=" flex flex-wrap-reverse mt-4 justify-center w-full gap-2 md:gap-5  *:rounded-lg">
-          <div className="w-full md:w-[560px] *:rounded-md flex  justify-center gap-2 md:gap-5">
-            <div className="lg:w-[280px]  w-full  h-[395px] bg-color2">g</div>
-            <div className="lg:w-[280px]  w-full h-[395px] bg-color2">h</div>
+        <NavLink to={`/projectshow/home1`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={home1[0].img} alt="" />
+          <div className=" ">
+            <span className='absolute z-20'> {home1.length}</span>
           </div>
-          <div className=" md:w-[700px]  w-full h-[395px] bg-color2">f</div>
-        </div> */}
-      </section>
+        </NavLink>
+
+        <NavLink to={`/projectshow/home2`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={home2[0].img} alt="" />
+          {/* <div className=" ">
+            <span className='absolute z-20'> {home2.length}</span>
+          </div> */}
+        </NavLink>
+
+        <NavLink  to={`/projectshow/gameroom`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={gameroom[0].img} alt="" />
+          {/* <div className=" ">
+            <span className='absolute z-20'> {gameroom.length}</span>
+          </div> */}
+        </NavLink>
+
+        <NavLink to={`/projectshow/keycheinimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={keycheinimage[0].img} alt="" />
+          {/* <div className=" ">
+            <span className='absolute z-20'> {keycheinimage.length}</span>
+          </div> */}
+        </NavLink>
+
+        <NavLink to={`/projectshow/keychenimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <img className='hover:scale-[.97] duration-150' src={keychenimage[0].img} alt="" />
+          {/* <div className=" ">
+            <span className='absolute z-20'> {keychenimage.length}</span>
+          </div> */}
+        </NavLink>
+      </div>
+
     </>
   )
 }
