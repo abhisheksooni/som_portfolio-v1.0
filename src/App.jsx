@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 
 import CustomSlider from "./components/costomSlider/custom.slider"
 import { project1, som, t1, t2, t3 } from './Imports/Images'
+import { NavLink } from 'react-router-dom'
 
 function App() {
 
@@ -61,7 +62,7 @@ function App() {
 
                 <p className='font-extrabold text-4xl'>Welcome to AS Renderings</p>
                 <p className='text-[16px]  mt-5 text-color1/50'>Step into a world where creativity meets functionality. At AS Renderings, we bring your interior dreams to life with stunning 3D visualizations and expert design solutions.</p>
-               
+
               </div>
 
             </div>
@@ -112,8 +113,8 @@ function App() {
               <p className='text-xl font-bold  text-color3'>Home</p>
             </div>
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
-              <h2 className='mb-4'>Our Process</h2>
-              <p className=' text-color3/60'>At Som soni. w take pride in our thoughtful approach to interior design, guiding clients through every step of the process to ensure their vision is brought to life seamlessly.</p>
+              <h2 className='mb-4 text-xl font-bold'>Our Process</h2>
+              <p className=' text-color3/60'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
               {/* <p className='mt-3'>Discover More</p> */}
             </div>
           </section>
@@ -207,7 +208,7 @@ function App() {
         </section>
 
         {/* section 6 Our Services */}
-        <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
+        {/* <section id='services' className='  bg-color3 pb-8 lg:pb-16 px-6 '>
           <h2 className='text-color1 text-5xl text-center py-12'>Our Services</h2>
           <section className='oberdd snap-x overflow-x-scrol flex *:mb-5 lg:*:mb-0  gap-5 justify-centerg *:rounded-md mt-5 *:w-[350px] '>
 
@@ -224,7 +225,7 @@ function App() {
               <p>Eco-Friendly</p>
             </div>
           </section>
-        </section>
+        </section> */}
 
         {/* section 7 FAQs */}
         <section className='bg-color3 flex  w-full flex-wrap lg:h-[50rem] pt-6 py-10'>
@@ -232,9 +233,20 @@ function App() {
           <div className="lg:w-[50%] p-12 flex flex-col justify-center">
             <div className="lg:max-w-[90%]">
               <span className='text-color2'>FAQs</span>
-              <p className=' text-4xl lg:text-6xl mt-7 mb-10 text-white'>Frequently Asked Qunctions</p>
-              <p className='my-8 text-white/70'>Have questions about our interior design services or the design process? Check out our FAQs section to find the answers you're </p>
-              <p className='mb-10 text-white/30'>If you can't find the information you need, don't hesitate to reach out to our team. We're here to guide you through every step of your interior design journey and ensure your vision </p>
+              <p className=' text-4xl lg:text-6xl mt-3 mb-10 text-white'>Frequently Asked Questions</p>
+              <p className='my-8 text-white/70'>Have questions about our 3D visualizations, concept development, or 2D drawings? Find all the answers here. Check out our FAQs section to find the answers you're </p>
+              <p className='mb-3 text-white'>What services do you offer?</p>
+              <p className='mb-3 text-white/40'>We specialize in 3D visualization, concept development, and 2D drawings, ensuring a clear vision before execution.</p>
+              <p className='mb-3 text-white'>Do you provide revisions?</p>
+              <p className='mb-3 text-white/40'>Yes! We offer revisions to fine-tune the design according to your preferences.</p>
+              <p className='mb-5 text-white'>How long does a project take?</p>
+              <p className='mb-3 text-white/40'>Timelines vary based on complexity, but we always aim for efficient delivery without compromising quality.</p>
+              <p className='mb-3 text-white'>Do you offer full-site execution?</p>
+              <p className='mb-3 text-white/40'>No, we focus on the design and planning process, providing high-quality 3D visuals and 2D drawings. Execution is managed separately.</p>
+
+              <p className='mb-5 text-white/40'>Still have questions?
+
+                Feel free to reach out to us for more details!</p>
 
               <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contact Us</p></button>
             </div>
@@ -255,7 +267,11 @@ function App() {
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
               <p className='text-white/50'>Discover our portfolio, learn about our services, and get in touch to start transforming your living or working space today</p>
             </div>
-            <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">Contact</button>
+          
+              <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">
+
+            <NavLink to={'/contact'} className={"text-color1"} >Contact</NavLink>
+            </button>
           </div>
         </section>
       </section>
