@@ -6,7 +6,7 @@ import "../App.css"
 function Nav() {
 
   const [menu, setmenu] = useState(false)
- 
+
 
   const handleScrollToServices = (e) => {
 
@@ -20,7 +20,7 @@ function Nav() {
 
   }
 
-  const menubarBtn = () =>{
+  const menubarBtn = () => {
 
   }
 
@@ -45,7 +45,7 @@ function Nav() {
               {/* <Link onClick={() => handleScrollToServices("services")}>
                 <li>Services</li>
               </Link> */}
-              
+
               <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/services"}>
                 <li>Services</li>
               </NavLink>
@@ -66,10 +66,10 @@ function Nav() {
 
           {/* mobile menu */}
           <div className="lg:hidden">
-            <button  className='text-color3 rounded-full p-1.5'>
+            <button className='text-color3 rounded-full p-1.5'>
 
               <label class="hamburger">
-                <input onClick={()=>setmenu(!menu)} type="checkbox" />
+                <input onClick={() => setmenu(!menu)} type="checkbox" />
                 <svg viewBox="0 0 32 32">
                   <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
                   <path class="line" d="M7 16 27 16"></path>
@@ -83,24 +83,24 @@ function Nav() {
 
 
         </nav>
-{/* menu */}
-        <div className={`${menu?"grid  ":"hidden  "}   backdrop-blur-lg bg-color4/60  w-full py-10 absolute z-50`}>
-          <ul className={ ` ${menu?"flex flex-col items-center  gap-8 hover:*:text-color2 font-semibold text-lg *:duration-150":""}`}>
-            <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/"}>
+        {/* menu */}
+        <div className={`${menu ? "grid  " : "hidden  "}   backdrop-blur-lg bg-color4/60  w-full py-10 absolute z-50`}>
+          <ul className={` ${menu ? "flex flex-col items-center  gap-8 hover:*:text-color2 font-semibold text-lg *:duration-150" : ""}`}>
+            <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/"}>
               <li >Home</li>
             </NavLink>
-            <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
+            <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
               <li>Projects</li>
             </NavLink>
-            <Link onClick={() => handleScrollToServices("services")}>
+            <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/services"}>
               <li>Services</li>
-            </Link>
-            <Link onClick={() =>{ handleScrollToServices("about"),
-              menu(false)
-            }}>
-              <NavLink>About</NavLink>
-            </Link>
-            <NavLink onClick={()=>menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contact"}>
+            </NavLink>
+            <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/about"}>
+              <li>About Us</li>
+            </NavLink>
+
+
+            <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/contact"}>
               <li>Contact</li>
             </NavLink>
 
