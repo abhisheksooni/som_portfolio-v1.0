@@ -36,6 +36,7 @@ import {
   p9image3,
 } from '../Imports/Images'
 import { NavLink } from 'react-router-dom'
+import { GalleryHorizontalEnd } from 'lucide-react'
 
 
 
@@ -198,7 +199,7 @@ function Projects() {
 
 
 
-  const [name,setName]= useState("")
+  const [name, setName] = useState("")
 
 
   useEffect(() => {
@@ -225,7 +226,7 @@ function Projects() {
       {/* projects */}
 
 
-      <div className=" columns-1  *:my-5 md:columns-3 px-5 md:px-10 ">
+      <div className=" columns-1  *:my-5 md:columns-3 p-5 md:p-10 ">
 
         {/* {
           projectsimages.map((projects) => (
@@ -235,47 +236,55 @@ function Projects() {
             </div>
           ))
         } */}
-        <NavLink to={`/projectshow/room`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={room[0].img} alt="" />
-          <div className=" ">
-            <span className='absolute z-20'> {room.length}</span>
-          </div>
-        </NavLink>
+        <div className=" relative">
+          <NavLink to={`/projectshow/room`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={room[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
+        <div className="relative">
+          <NavLink to={`/projectshow/home1`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={home1[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
+        <div className="relative">
+          <NavLink to={`/projectshow/home2`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={home2[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
+        <div className="relative">
+          <NavLink to={`/projectshow/gameroom`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={gameroom[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
+        <div className="relative">
+          <NavLink to={`/projectshow/keycheinimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={keycheinimage[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
 
-        <NavLink to={`/projectshow/home1`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={home1[0].img} alt="" />
-          <div className=" ">
-            <span className='absolute z-20'> {home1.length}</span>
-          </div>
-        </NavLink>
-
-        <NavLink to={`/projectshow/home2`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={home2[0].img} alt="" />
-          {/* <div className=" ">
-            <span className='absolute z-20'> {home2.length}</span>
-          </div> */}
-        </NavLink>
-
-        <NavLink  to={`/projectshow/gameroom`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={gameroom[0].img} alt="" />
-          {/* <div className=" ">
-            <span className='absolute z-20'> {gameroom.length}</span>
-          </div> */}
-        </NavLink>
-
-        <NavLink to={`/projectshow/keycheinimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={keycheinimage[0].img} alt="" />
-          {/* <div className=" ">
-            <span className='absolute z-20'> {keycheinimage.length}</span>
-          </div> */}
-        </NavLink>
-
-        <NavLink to={`/projectshow/keychenimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-          <img className='hover:scale-[.97] duration-150' src={keychenimage[0].img} alt="" />
-          {/* <div className=" ">
-            <span className='absolute z-20'> {keychenimage.length}</span>
-          </div> */}
-        </NavLink>
+        <div className="relative">
+          <NavLink to={`/projectshow/keychenimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={keychenimage[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
       </div>
 
     </>

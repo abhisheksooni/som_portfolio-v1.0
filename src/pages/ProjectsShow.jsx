@@ -229,6 +229,7 @@ function ProjectsShow() {
   return (
    <>
    <section className='columns-1k gap-5 mb-10 md:mb-16 *:rounded-xl flex items-stretch justify-center flex-wrap md:columns-2k px-5 md:px-10'>
+    
    <LightGallery
                 onInit={onInit}
                 speed={500}
@@ -239,9 +240,12 @@ function ProjectsShow() {
 
              
                {data.map((image, index) => (
+              
+
           <a href={image.img} className='w-[100%]  md:w-[45%] *:rounded-xl' key={image.id} >
             <img className='w-[100%]  hover:scale-[.97] my-3 duration-150'  src={image.img} alt={image.img} />
           </a>
+              
         ))}
                {/* </div> */}
             </LightGallery>
