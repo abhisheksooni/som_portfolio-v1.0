@@ -39,7 +39,7 @@ function App() {
       <section className=''>
         {/* section 1 */}
         <section>
-          <CustomSlider>
+          <CustomSlider  >
             {images.map((image, index) => {
               return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
             })}
@@ -100,18 +100,18 @@ function App() {
 
           </div>
           <section className=' lg:flex *:mb-5 lg:*:mb-0 gap-5 py-10 '>
-            <div className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
+            <NavLink to={"/project/living"} className="bg-color3 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color1'>Living Room</p>
-            </div>
-            <div className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
+            </NavLink>
+            <NavLink to={"/project/bedroom"} className="bg-color2 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color1'>Bedroom</p>
-            </div>
-            <div className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
+            </NavLink>
+            <NavLink to={"/project/dining"} className="bg-color4 w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color3'>Dining</p>
-            </div>
-            <div className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
+            </NavLink>
+            <NavLink to={"/project/home"} className="bg-white w-full h-[7rem] lg:w-[15rem] lg:h-[15rem] hover:scale-105 duration-300 rounded-md flex justify-center items-center cursor-pointer">
               <p className='text-xl font-bold  text-color3'>Home</p>
-            </div>
+            </NavLink>
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
               <h2 className='mb-4 text-xl font-bold'>Our Process</h2>
               <p className=' text-color3/60'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
@@ -188,8 +188,8 @@ function App() {
           <div className="flex justify-center flex-col items-center py-5 lg:py-20">
             <h2 className='text-color5 text-3xl'>Ready to Transform Your</h2>
             <div className=" flex gap-3 mt-5">
-              <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Get Started</p></button>
-              <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Contact Us</p></button>
+              {/* <button className='rounded-full bg-color5 '><p className='px-6 font-medium py-1.5 text-sm'>Get Started</p></button> */}
+              <button className='rounded-full bg-color5 px-6 font-medium  text-sm py-2'><NavLink to={"/contact"} className=''>Contact Us</NavLink></button>
 
             </div>
           </div>
@@ -248,7 +248,7 @@ function App() {
 
                 Feel free to reach out to us for more details!</p>
 
-              <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'>Contact Us</p></button>
+              <button className='rounded-full bg-color2  text-white'><p className='px-8 font-medium py-2.5 text-sm'> <NavLink to={"/contact"}>Contact Us</NavLink> </p></button>
             </div>
           </div>
           <div className=" image1 lg:w-[49%] m-4 md:m-0 w-full h-[40rem] rounded-xl bg-white ">
