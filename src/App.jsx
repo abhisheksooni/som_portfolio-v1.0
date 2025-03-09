@@ -9,7 +9,8 @@ import { useEffect } from 'react'
 import CustomSlider from "./components/costomSlider/custom.slider"
 import { project1, som, t1, t2, t3 } from './Imports/Images'
 import { NavLink } from 'react-router-dom'
-
+import whatsappicon from "./Images/whatsapp_icon.png"
+import WhatsappButton from './components/WhatsappButton'
 function App() {
 
   const images = [
@@ -29,7 +30,6 @@ function App() {
   ];
 
 
-
   useEffect(() => {
     // window.scroll({ top: 0, behavior: 'smooth' })
   }, [])
@@ -45,8 +45,10 @@ function App() {
             })}
           </CustomSlider>
         </section>
+        
         {/* section 2 Elevating Spaces */}
         <section>
+       
           <div className="text-center my-4">
             <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
             <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
@@ -93,7 +95,7 @@ function App() {
           </div>
         </section>
         {/* section 3 Featured project */}
-        <section className='p-3 lg:px-12'>
+        {/* <section className='p-3 lg:px-12'>
           <div className="flex justify-between py-5">
             <p className='text-color3/60 text-xl'>Featured Project</p>
 
@@ -115,10 +117,10 @@ function App() {
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
               <h2 className='mb-4 text-xl font-bold'>Our Process</h2>
               <p className=' text-color3/60'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
-              {/* <p className='mt-3'>Discover More</p> */}
+          
             </div>
           </section>
-        </section>
+        </section> */}
         {/* section 4  Luxurious Retreats & about us*/}
         <section id='about' className=' lg:flex flex-wrap lg:h-[60rem]'>
           {/* left */}
@@ -255,7 +257,7 @@ function App() {
           </div>
         </section>
         {/* section 8 Quick Link */}
-        <section className='lg:flex bg-color3 gap-8 lg:py-16 px-4 lg:px-0 justify-center'>
+        <section className='lg:flex bg-color3 gap-8 lg:py-16 px-4 lg:px-0 items-center justify-center'>
           <div className="flex  gap-3 *:rounded-md">
             <div className="md:w-[20rem] max-h-[20rem] img11 w-[8rem] h-[8rem] md:h-[20rem]  bg-white">h</div>
             <div className="md:w-[20rem] max-h-[20rem] img12 w-[8rem] h-[8rem] md:h-[20rem] bg-white"></div>
@@ -265,7 +267,7 @@ function App() {
             <p className='text-color2 m-5'>Quick Links</p>
             <div className="bg-color6 p-5 px-10 rounded-xl  lg:max-w-[400px]">
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
-              <p className='text-white/50'>Discover our portfolio, learn about our services, and get in touch to start transforming your living or working space today</p>
+              <p className='text-white/50'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
             </div>
           
               <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">
@@ -274,6 +276,10 @@ function App() {
             </button>
           </div>
         </section>
+        {/*  */}
+        <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
+        <WhatsappButton/>
+        </div>
       </section>
     </>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import WhatsappButton from '../components/WhatsappButton'
 
 function Services() {
     return (
@@ -86,6 +87,9 @@ function Services() {
 
                 </div>
             </div>
+            <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
+        <WhatsappButton/>
+        </div>
         </section>
     )
 }

@@ -46,6 +46,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import WhatsappButton from '../components/WhatsappButton';
 
 function ProjectsShow() {
   const bathroomimage = [
@@ -251,7 +252,9 @@ function ProjectsShow() {
             </LightGallery>
       </section>
 
-
+      <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
+        <WhatsappButton/>
+        </div>
         </>
   )
 }

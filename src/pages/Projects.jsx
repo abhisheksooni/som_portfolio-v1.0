@@ -35,13 +35,20 @@ import {
   p9image2,
   p9image3,
 } from '../Imports/Images'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 import { GalleryHorizontalEnd } from 'lucide-react'
-
+import homeicon from "../Images/home_icon.png"
+import WhatsappButton from '../components/WhatsappButton'
 
 
 function Projects() {
-
+  let a = [
+    { name: "home", img: { p8image1, p8image2 } },
+    { name: "living", img: { p8image1, p8image2 } },
+    { name: "dining", img: { p8image1, p8image2 } },
+    { name: "bedroom", img: { p8image1, p4image3 } },
+    { name: "all", img: { p8image1, p4image3,p4image4,p4image5,p4image6 } },
+  ]
   const bathroomimage = [
     {
       id: 21,
@@ -198,44 +205,61 @@ function Projects() {
   ]
 
 
+  const { Pname } = useParams()
 
-  const [name, setName] = useState("")
-
+  const [data, setData] = useState("all");
 
   useEffect(() => {
-    window.scroll({ top: '0', behavior: 'smooth' })
-  }, [])
+    // Set the data array based on the route parameter
+    if (Pname === "home") {
+      setData(Pname);
+    } else if (Pname === "bedroom") {
+      setData(Pname);
+    } else if (Pname === "living") {
+      setData(Pname);
+    } else if (Pname === "dining") {
+      setData(Pname);
+    }
+  }, [Pname]);
 
+  console.log("aaa", a.filter((i) =>i.name === data));
+
+  useEffect(() => {
+    window.scroll({ top: "0", behavior: "smooth" });
+  }, []);
   return (
 
     <>
-      {/* <div className="h-[60px] lg:h-[120px] px-4"></div> */}
       <section className="w-[80%] mx-auto flex flex-col items-center ">
-
-        <p className='text-5xl font-semibold '>Project</p>
+        <p className='text-5xl font-semibold uppercase'>Project</p>
         <div className=""></div>
-        {/* button */}
-        <div className="hover:*:bg-color4 *:duration-300  *:bg-white py-8 flex flex-wrap items-center justify-center gap-3 *:py-1.5 *:px-3 *:rounded-full mt-5">
-          <button className='flex items-center justify-center gap-1.5'> <img src="https://static.havenly.com/home/before-and-after/living.svg" alt="" /> <p>Living Room</p></button>
-          <button className='flex items-center justify-center gap-1.5 '> <img src="https://static.havenly.com/home/before-and-after/dining.svg" className='w-[32px]' alt="" /> <p>Dining Room</p></button>
-          <button className='flex items-center justify-center gap-1.5'> <img src="https://static.havenly.com/home/before-and-after/bedroom.svg" alt="" /> <p>Bedroom</p></button>
-          <button className='flex items-center justify-center gap-1.5'> <img src="https://static.havenly.com/home/before-and-after/more.svg" alt="" /> <p>Explore More</p></button>
-        </div>
-
+        {/* <div className="hover:*:bg-color4 *:duration-300   py-8 flex flex-wrap items-center justify-center gap-3  *:py-1.5 *:px-3 *:rounded-full mt-5">
+          <NavLink to={"/project/living"} className={({ isActive }) => `${isActive ? "text-color3 bg-color4 " : "text-color3 bg-white"} flex items-center justify-center gap-1.5 `}> <img src="https://static.havenly.com/home/before-and-after/living.svg" alt="" /> <p>Living Room</p></NavLink>
+          <NavLink to={"/project/dining"} className={({ isActive }) => `${isActive ? "text-color3 bg-color4" : "text-color3 bg-white"} flex items-center justify-center gap-1.5`}> <img src="https://static.havenly.com/home/before-and-after/dining.svg" className='w-[32px]' alt="" /> <p>Dining Room</p></NavLink>
+          <NavLink to={"/project/bedroom"} className={({ isActive }) => `${isActive ? "text-color3 bg-color4" : "text-color3 bg-white"} flex items-center justify-center gap-1.5`}> <img src="https://static.havenly.com/home/before-and-after/bedroom.svg" alt="" /> <p>Bedroom</p></NavLink>
+          <NavLink to={"/project/home"} className={({ isActive }) => `${isActive ? "text-color3 bg-color4" : "text-color3 bg-white"} flex items-center justify-center gap-1.5`}> <img src="https://cdn-icons-png.freepik.com/512/2413/2413074.png?ga=GA1.1.374937377.1739095233" className='w-[30px] mr-1' alt="" /> <p>Home</p></NavLink>
+          <NavLink to={"/project/all"} className={({ isActive }) => `${isActive ? "text-color3 bg-color4" : "text-color3 bg-white"} flex items-center justify-center gap-1.5`}> <p>Explore All</p></NavLink>
+        </div> */}
       </section>
-      {/* projects */}
-
 
       <div className=" columns-1  *:my-5 md:columns-3 p-5 md:p-10 ">
 
-        {/* {
-          projectsimages.map((projects) => (
-            <div className='w-full h-auto mb-3 p-2 hover:p-2 duration-150 bg-color4 rounded-2xl' key={projects.id} >
-         
-            <img className='w-full h-auto object-cover rounded-lg aspect-squar' loading="lazy" src={projects.img} />
+        <div className=" relative">
+          <NavLink to={`/projectshow/bathroomimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={bathroomimage[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
-          ))
-        } */}
+          </NavLink>
+        </div>
+        <div className=" relative">
+          <NavLink to={`/projectshow/bathroom2image`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={bathroom2image[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
         <div className=" relative">
           <NavLink to={`/projectshow/room`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
             <img className='hover:scale-[.98] duration-150' src={room[0].img} alt="" />
@@ -287,6 +311,9 @@ function Projects() {
         </div>
       </div>
 
+      <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
+        <WhatsappButton/>
+        </div>
     </>
   )
 }
