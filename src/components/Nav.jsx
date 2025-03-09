@@ -28,7 +28,7 @@ function Nav() {
     <>
       <section className='relative'>
         <nav className='flex items-center justify-between px-10 py-5'>
-          <NavLink to={"/"} className="flex items-center ">
+          <NavLink to={"/"} className="flex items-center hover:pb-1.5 duration-150">
             <div className=" bg-color6/70 rounded-full">
               <img className='w-10 ' src={logoicon} alt="" />
             </div>
