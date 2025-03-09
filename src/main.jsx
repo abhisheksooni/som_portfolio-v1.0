@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: '/project/:Pname',
+        path: '/project',
         element: <Projects />,
       },
       {

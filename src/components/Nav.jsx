@@ -39,7 +39,7 @@ function Nav() {
               <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/"}>
                 <li >Home</li>
               </NavLink>
-              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project/all"}>
+              <NavLink className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
                 <li>Projects</li>
               </NavLink>
 
@@ -83,7 +83,7 @@ function Nav() {
             <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/"}>
               <li >Home</li>
             </NavLink>
-            <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project/all"}>
+            <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/project"}>
               <li>Projects</li>
             </NavLink>
             <NavLink onClick={() => menu(false)} className={({ isActive }) => `${isActive ? "text-color2" : "text-color3"}`} to={"/services"}>

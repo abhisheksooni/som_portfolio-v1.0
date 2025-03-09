@@ -35,9 +35,9 @@ import {
   p9image2,
   p9image3,
 } from '../Imports/Images'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink,  } from 'react-router-dom'
 import { GalleryHorizontalEnd } from 'lucide-react'
-import homeicon from "../Images/home_icon.png"
+
 import WhatsappButton from '../components/WhatsappButton'
 
 
@@ -205,24 +205,6 @@ function Projects() {
   ]
 
 
-  const { Pname } = useParams()
-
-  const [data, setData] = useState("all");
-
-  useEffect(() => {
-    // Set the data array based on the route parameter
-    if (Pname === "home") {
-      setData(Pname);
-    } else if (Pname === "bedroom") {
-      setData(Pname);
-    } else if (Pname === "living") {
-      setData(Pname);
-    } else if (Pname === "dining") {
-      setData(Pname);
-    }
-  }, [Pname]);
-
-  console.log("aaa", a.filter((i) =>i.name === data));
 
   useEffect(() => {
     window.scroll({ top: "0", behavior: "smooth" });
