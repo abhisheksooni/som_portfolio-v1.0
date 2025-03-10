@@ -1,10 +1,4 @@
-import img1 from '../Images/skills_icons/ai.png'
-import img2 from '../Images/skills_icons/autodesk.png'
-import img3 from '../Images/skills_icons/Enscape.png'
-import img4 from '../Images/skills_icons/lumion.png'
-import img5 from '../Images/skills_icons/ps.png'
-import img6 from '../Images/skills_icons/sketchbook.webp'
-import img7 from '../Images/skills_icons/sketchup.png'
+
 import som from '../Images/som.jpg'
 import som1 from '../Images/som1.png'
 import kitchen from '../Images/kitchen.jpg'
@@ -17,6 +11,10 @@ import t3 from '../Images/thambnail/p3.png'
 import img11 from '../Images/getstart/img1.jpg'
 import img12 from '../Images/getstart/img2.jpg'
 import img13 from '../Images/getstart/img3.jpg'
+
+import simg1 from '../Images/Projects/moreProjects/bb22.png'
+import simg2 from '../Images/Projects/moreProjects/p1.png'
+import simg3 from '../Images/Projects/moreProjects/p2.png'
 
 // projects images
 import p1image1 from '../Images/Projects/p1/p1.png'
@@ -31,6 +29,7 @@ import p2image5 from '../Images/Projects/p22/p5.jpeg'
 import p2image6 from '../Images/Projects/p22/p6.jpg'
 
 import p3image1 from '../Images/Projects/p3/pq.png'
+import p3image2 from '../Images/Projects/p3/p2.jpg'
 
 import p4image1 from '../Images/Projects/p4/p1.png'
 import p4image2 from '../Images/Projects/p4/p2.png'
@@ -61,16 +60,33 @@ import p10image2 from '../Images/Projects/p10/2ps.png'
 import p10image3 from '../Images/Projects/p10/3ps.png'
 import p10image4 from '../Images/Projects/p10/4ps.png'
 
+import p11image1 from '../Images/Projects/p11/1.png'
+import p11image2 from '../Images/Projects/p11/2.png'
+import p11image3 from '../Images/Projects/p11/3.png'
+import p11image4 from '../Images/Projects/p11/4.png'
+import p11image5 from '../Images/Projects/p11/5.png'
+
+import p12image1 from '../Images/Projects/p12/p1.png'
+import p12image2 from '../Images/Projects/p12/p2.png'
+import p12image3 from '../Images/Projects/p12/p3.png'
+
+import p13image1 from '../Images/Projects/p13/141.png'
+import p13image2 from '../Images/Projects/p13/p142.png'
+
+
+import p14image1 from '../Images/Projects/p14/1.png'
+import p14image2 from '../Images/Projects/p14/2.png'
+import p14image3 from '../Images/Projects/p14/3.png'
+import p14image4 from '../Images/Projects/p14/4.png'
+
+
+
+
+
 
 
 export {
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    img7,
+
     som,
     som1,
     kitchen,
@@ -86,6 +102,12 @@ export {
     img12,
     img13,
 
+    // singal images
+
+    simg1,
+    simg2,
+    simg3,
+ 
 
     // projects images
     p1image1,
@@ -100,6 +122,7 @@ export {
     p2image6,
 
     p3image1,
+    p3image2,
 
     p4image1,
     p4image2,
@@ -129,6 +152,25 @@ export {
     p10image2,
     p10image3,
     p10image4,
+
+    p11image1,
+    p11image2,
+    p11image3,
+    p11image4,
+    p11image5,
+
+    p12image1,
+    p12image2,
+    p12image3,
+
+
+    p13image1,
+    p13image2,
+
+    p14image1,
+    p14image2,
+    p14image3,
+    p14image4
 
 
 }

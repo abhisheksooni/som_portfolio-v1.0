@@ -4,28 +4,39 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import { useEffect } from 'react'
+import '@vidstack/react/player/styles/default/theme.css';
+import '@vidstack/react/player/styles/default/layouts/audio.css';
+import '@vidstack/react/player/styles/default/layouts/video.css';
 
-
+import { MediaPlayer, MediaProvider, Poster, Track } from "@vidstack/react"
+import { DefaultVideoLayout, defaultLayoutIcons } from '@vidstack/react/player/layouts/default';
+import { PlayIcon } from '@vidstack/react/icons';
 import CustomSlider from "./components/costomSlider/custom.slider"
-import { project1, som, t1, t2, t3 } from './Imports/Images'
+import { project1, som, t1, t2, t3, p11image1, p1image1 } from './Imports/Images'
 import { NavLink } from 'react-router-dom'
-import whatsappicon from "./Images/whatsapp_icon.png"
+import Enscapevideo from "./Images/Enscape_56.webm"
+
 import WhatsappButton from './components/WhatsappButton'
 function App() {
 
   const images = [
     {
+      imgURL: p11image1,
+      imgAlt: p11image1
+    },
+    {
       imgURL: t1,
       imgAlt: t1
     },
     {
-      imgURL: t2,
-      imgAlt: t2
+      imgURL: p1image1,
+      imgAlt: p1image1
     },
     {
       imgURL: t3,
       imgAlt: t3
     },
+
 
   ];
 
@@ -45,13 +56,16 @@ function App() {
             })}
           </CustomSlider>
         </section>
-        
+
         {/* section 2 Elevating Spaces */}
         <section>
-       
+
           <div className="text-center my-4">
             <p className='text-color3/60 mt-7 text-xl'>Crafting Inspiring Interiors</p>
-            <h2 className='text-5xl unkempt-bold my-3'>Elevating Spaces</h2>
+            <h2 className='text-5xl unkempt-bold my-3 '>Elevating Spaces</h2>
+          </div>
+          <div className=" mt-8  text-center">
+            <NavLink to={"/project"} className={"bg-color4  hover:bg-color2 duration-200 rounded-full py-2.5 text-color3 text-xl font-medium px-5 border border-color3 p-1"}>All Projects</NavLink>
           </div>
 
           <div className=" oberdd snap-x snap-mandatory *:snap-always overflow-x-scroll flex *:mb-5 lg:mb-0 gap-5 p-8 lg:justify-center lg:*:w-[33rem] ">
@@ -90,9 +104,8 @@ function App() {
 
             </div>
 
-
-
           </div>
+
         </section>
         {/* section 3 Featured project */}
         {/* <section className='p-3 lg:px-12'>
@@ -163,7 +176,7 @@ function App() {
           {/* right */}
           <section className='bg-color3 lg:w-[33%] py-16 h-full flex items-center justify-center flex-col p-5'>
 
-            <div className="rounded-full w-[26rem] h-[26rem] lg:w-[250px] lg:h-[250px] bg-white ">
+            <div className="rounded-full  w-[22rem] h-[22rem] lg:w-[250px] lg:h-[250px] bg-white ">
               <img className='rounded-full' src={som} alt="" />
 
             </div>
@@ -180,10 +193,23 @@ function App() {
 
         </section>
         {/* rev */}
-        {/* <section className=' w-full h-48  py-16 flex flex-col justify-center items-center  overflow-scroll '>
-<div className="bg-color6 w-1/2 h-48"></div>
-<div className="bg-color2 w-1/2 h-48"></div>
-<div className="bg-white w-1/2 h-48"></div>
+        {/* <section>
+          <section className=' w-full py-16 flex  justify-center items-center gap-5  '>
+            <div className="">
+              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+            </div>
+            <div className="">
+              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+            </div>
+            <div className="">
+              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+            </div>
+
+          </section>
+          <div className="  mb-10 text-center">
+            <NavLink to={"/project"} className={"bg-color4  hover:bg-color2 duration-200 rounded-full py-2.5 text-color3 text-xl font-medium px-5  p-1"}>More Projects</NavLink>
+          </div>
+
         </section> */}
         {/* section 5 */}
         <section className='bg-color2 w-full px-6 lg:px-0 pb-[2rem] lg:pb-[6rem]'>
@@ -269,16 +295,31 @@ function App() {
               <p className='text-2xl font-semibold mb-4 text-white'>Home</p>
               <p className='text-white/50'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
             </div>
-          
-              <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">
 
-            <NavLink to={'/contact'} className={"text-color1"} >Contact</NavLink>
+            <button className="rounded-full bg-color6 px-8 py-1.5 mt-4 ">
+
+              <NavLink to={'/contact'} className={"text-color1"} >Contact</NavLink>
             </button>
           </div>
         </section>
+
+        <section>
+
+          {/* <MediaPlayer  title="Enscapevideo" viewType='video'
+  src={Enscapevideo}>
+  <MediaProvider   streamType='on-demand'
+ viewType='video'
+ streamType='on-demand'
+ logLevel='warn'
+ crossOrigin
+ playsInline
+ title='Sprite Fight'  />
+</MediaPlayer> */}
+        </section>
+
         {/*  */}
         <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
-        <WhatsappButton/>
+          <WhatsappButton />
         </div>
       </section>
     </>

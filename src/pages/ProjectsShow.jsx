@@ -4,6 +4,20 @@ import {  p10image1,
   p10image2,
   p10image3,
   p10image4,
+  p11image1,
+  p11image2,
+  p11image3,
+  p11image4,
+  p11image5,
+  p12image1,
+  p12image2,
+  p12image3,
+  p13image1,
+  p13image2,
+  p14image1,
+  p14image2,
+  p14image3,
+  p14image4,
   p1image1,
   p1image2,
   p1image3,
@@ -14,6 +28,7 @@ import {  p10image1,
   p2image5,
   p2image6,
   p3image1,
+  p3image2,
   p4image1,
   p4image2,
   p4image3,
@@ -196,6 +211,87 @@ function ProjectsShow() {
     },
 
   ]
+    const project13 = [
+      {
+        id: 31,
+        img: p3image1
+      },
+      {
+        id: 32,
+        img: p3image2
+      },
+  
+    ]
+    const project14 = [
+      {
+        id: 141,
+        img: p11image1
+      },
+      {
+        id: 142,
+        img: p11image2
+      },
+      {
+        id: 143,
+        img: p11image3
+      },
+      {
+        id: 144,
+        img: p11image4
+      },
+      {
+        id: 145,
+        img: p11image5
+      },
+  
+    ]
+      const project15 = [
+        {
+          id: 151,
+          img: p12image1
+        },
+        {
+          id: 152,
+          img: p12image2
+        },
+        {
+          id: 153,
+          img: p12image3
+        },
+    
+      ]
+      const project16 = [
+        {
+          id: 161,
+          img: p13image1
+        },
+        {
+          id: 162,
+          img: p13image2
+        },
+    
+    
+      ]
+      const project17 = [
+        {
+          id: 171,
+          img: p14image1
+        },
+        {
+          id: 172,
+          img: p14image2
+        },
+        {
+          id: 173,
+          img: p14image3
+        },
+        {
+          id: 174,
+          img: p14image4
+        },
+    
+    
+      ]
 
   const {name} = useParams()
   console.log(name);
@@ -221,8 +317,18 @@ function ProjectsShow() {
       setData(room);
     } else if (name === "keycheinimage") {
       setData(keycheinimage);
+    } else if (name === "project13") {
+      setData(project13);
     } else if (name === "gameroom") {
       setData(gameroom);
+    } else if (name === "project14") {
+      setData(project14);
+    }else if (name === "project15") {
+      setData(project15);
+    }else if (name === "project16") {
+      setData(project16);
+    }else if (name === "project17") {
+      setData(project17);
     }
   }, [name]);
 

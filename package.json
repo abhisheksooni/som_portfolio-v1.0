@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vidstack/react": "^1.12.13",
     "lightgallery": "^2.8.2",
     "lucide-react": "^0.362.0",
+    "media-icons": "^1.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
