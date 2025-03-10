@@ -10,7 +10,7 @@ function WhatsappButton() {
         const whatsappURL = `https://api.whatsapp.com/send?phone=${number}&text=${encodemessage}`
 
         return (<NavLink className={"flex justify-center"} to={whatsappURL}>
-            <img src={whatsappicon} className='w-16' alt="" />
+            <img src={whatsappicon} className='w-16 md:w-[68px] rounded-full' alt="" />
         </NavLink>)
     }
     return (
