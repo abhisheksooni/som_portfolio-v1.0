@@ -79,6 +79,12 @@ import p14image2 from '../Images/Projects/p14/2.png'
 import p14image3 from '../Images/Projects/p14/3.png'
 import p14image4 from '../Images/Projects/p14/4.png'
 
+import p15image1 from '../Images/Projects/p15/p1.png'
+import p15image2 from '../Images/Projects/p15/p2.png'
+import p15image3 from '../Images/Projects/p15/p3.png'
+import p15image4 from '../Images/Projects/p15/p4.png'
+import p15image5 from '../Images/Projects/p15/p5.png'
+
 
 
 
@@ -170,7 +176,14 @@ export {
     p14image1,
     p14image2,
     p14image3,
-    p14image4
+    p14image4,
+
+    p15image1,
+    p15image2,
+    p15image3,
+    p15image4,
+    p15image5,
+
 
 
 }

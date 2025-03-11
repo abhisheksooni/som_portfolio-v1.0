@@ -15,6 +15,11 @@ import {
   p14image2,
   p14image3,
   p14image4,
+  p15image1,
+  p15image2,
+  p15image3,
+  p15image4,
+  p15image5,
   p1image1,
   p1image2,
   p1image3,
@@ -284,6 +289,30 @@ function Projects() {
 
 
   ]
+  const project18 = [
+    {
+      id: 171,
+      img: p15image1
+    },
+    {
+      id: 172,
+      img: p15image2
+    },
+    {
+      id: 173,
+      img: p15image3
+    },
+    {
+      id: 174,
+      img: p15image4
+    },
+    {
+      id: 175,
+      img: p15image5
+    },
+
+
+  ]
 
 
 
@@ -307,6 +336,14 @@ function Projects() {
 
       <div className=" columns-1  *:my-5 md:columns-3 p-5 md:p-10 ">
 
+        <div className=" relative">
+          <NavLink to={`/projectshow/project18`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img className='hover:scale-[.98] duration-150' src={project18[0].img} alt="" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
         <div className=" relative">
           <NavLink to={`/projectshow/project17`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
             <img className='hover:scale-[.98] duration-150' src={project17[0].img} alt="" />

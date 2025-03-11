@@ -18,6 +18,11 @@ import {  p10image1,
   p14image2,
   p14image3,
   p14image4,
+  p15image1,
+  p15image2,
+  p15image3,
+  p15image4,
+  p15image5,
   p1image1,
   p1image2,
   p1image3,
@@ -292,6 +297,30 @@ function ProjectsShow() {
     
     
       ]
+       const project18 = [
+          {
+            id: 171,
+            img: p15image1
+          },
+          {
+            id: 172,
+            img: p15image2
+          },
+          {
+            id: 173,
+            img: p15image3
+          },
+          {
+            id: 174,
+            img: p15image4
+          },
+          {
+            id: 175,
+            img: p15image5
+          },
+      
+      
+        ]
 
   const {name} = useParams()
   console.log(name);
@@ -329,6 +358,8 @@ function ProjectsShow() {
       setData(project16);
     }else if (name === "project17") {
       setData(project17);
+    }else if (name === "project18") {
+      setData(project18);
     }
   }, [name]);
 
