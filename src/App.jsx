@@ -52,7 +52,7 @@ function App() {
         <section>
           <CustomSlider  >
             {images.map((image, index) => {
-              return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+              return <img  loading='lazy'key={index} src={image.imgURL} alt={image.imgAlt} />;
             })}
           </CustomSlider>
         </section>
@@ -147,28 +147,29 @@ function App() {
 
                 </div>
 
-                <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
-                <p className='text-color3/60'>Immerse yourself in our hospitality portfolio, where we craft welcoming environments that.</p>
-                <div className="flex justify-between mt-2" >
+                <h2 className='mt-4 mb-5 text-3xl font-semibold'>Guest Room</h2>
+                <p className='text-color3/60'>A perfect blend of style and relaxation, our guest rooms offer a cozy retreat with modern aesthetics and premium finishes.</p>
+              
+                {/* <div className="flex justify-between mt-2" >
                   <p className='text-color3/60'>Explore</p>
                   <button className='bg-color2 px-4 rounded-full text-color3 '>
                     Learn More
                   </button>
-                </div>
+                </div> */}
               </div>
               <div className="">
                 <div className="image2 w-full lg:w-[570px]  h-[480px] rounded-lg">
-                  {/* <img className='image2 w-[570px] h-[480px] rounded-lg ' src={t1} alt={t1} /> */}
+                  {/* <img  loading='lazy'className='image2 w-[570px] h-[480px] rounded-lg ' src={t1} alt={t1} /> */}
                 </div>
 
-                <h2 className='mt-4 mb-5 text-3xl font-semibold'>Lobby</h2>
-                <p className='text-color3/60'>Our design team specializes in designing sophisticated and comfortable guest suites that </p>
-                <div className="flex justify-between mt-2">
+                <h2 className='mt-4 mb-5 text-3xl font-semibold'>Luxury Bath</h2>
+                <p className='text-color3/60'>Designed for indulgence, our elegant bathrooms feature high-end materials, ambient lighting, and a spa-like atmosphere. </p>
+                {/* <div className="flex justify-between mt-2">
                   <p className='text-color3/60'>Discover</p>
                   <button className='bg-color2 px-4 rounded-full text-color3 '>
                     Book Now
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -177,11 +178,11 @@ function App() {
           <section className='bg-color3 lg:w-[33%] py-16 h-full flex items-center justify-center flex-col p-5'>
 
             <div className="rounded-full  w-[22rem] h-[22rem] lg:w-[250px] lg:h-[250px] bg-white ">
-              <img className='rounded-full' src={som} alt="" />
+              <img  loading='lazy' className='rounded-full' src={som} alt="" />
 
             </div>
-            <p className='text-white text-xl mt-3 text-white/50 mb-4'>Som Soni</p>
-            {/* <img src="" alt="" /> */}
+            <p className=' text-xl mt-3 text-color3 font-medium bg-color1/25 backdrop-blur-[3px] rounded-full px-3 py-0.5 mb-4'>Som Soni</p>
+            {/* <img  loading='lazy'src="" alt="" /> */}
             <div className="max-w-[430px] text-white">
               <h2 className='font-medium mt-8 lg:mt-0 text-xl'>About Us</h2>
               <p className='text-white/50 mt-2'>At AS Renderings, we are a team of passionate interior designers and 3D visualizers dedicated to transforming spaces into exceptional living and working environments. We specialize in 3D visualization, detailed space planning, and color selection to bring your ideas to life. Our commitment is to deliver designs that blend creativity with functionality, ensuring each project reflects a unique character and style.</p>
@@ -196,13 +197,13 @@ function App() {
         {/* <section>
           <section className=' w-full py-16 flex  justify-center items-center gap-5  '>
             <div className="">
-              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+              <img  loading='lazy'className='w-[600px] rounded-xl' src={p11image1} alt="" />
             </div>
             <div className="">
-              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+              <img  loading='lazy'className='w-[600px] rounded-xl' src={p11image1} alt="" />
             </div>
             <div className="">
-              <img className='w-[600px] rounded-xl' src={p11image1} alt="" />
+              <img  loading='lazy'className='w-[600px] rounded-xl' src={p11image1} alt="" />
             </div>
 
           </section>
@@ -303,19 +304,12 @@ function App() {
           </div>
         </section>
 
-        <section>
+        {/* <section>
 
-          {/* <MediaPlayer  title="Enscapevideo" viewType='video'
-  src={Enscapevideo}>
-  <MediaProvider   streamType='on-demand'
- viewType='video'
- streamType='on-demand'
- logLevel='warn'
- crossOrigin
- playsInline
- title='Sprite Fight'  />
-</MediaPlayer> */}
-        </section>
+
+<iframe width="503" height="895" src="https://www.youtube.com/embed/qwfKbPLWqc8" title="Modern Study Room Design #interiordesign #decoration #decor #homedecor #home #walldecor #homedesign" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section> */}
 
         {/*  */}
         <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">

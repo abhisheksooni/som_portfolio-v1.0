@@ -1,6 +1,6 @@
 
-import som from '../Images/som.jpg'
-import som1 from '../Images/som1.png'
+import som from '../Images/som_dp.jpg'
+// import som1 from '../Images/som1.png'
 import kitchen from '../Images/kitchen.jpg'
 import project1 from '../Images/Projects/p2.png'
 import aslogo from '../Images/aslogo.png'
@@ -85,6 +85,13 @@ import p15image3 from '../Images/Projects/p15/p3.png'
 import p15image4 from '../Images/Projects/p15/p4.png'
 import p15image5 from '../Images/Projects/p15/p5.png'
 
+import p16image1 from '../Images/Projects/p16/1PS.jpg'
+import p16image2 from '../Images/Projects/p16/2PS.jpg'
+import p16image3 from '../Images/Projects/p16/3PS.jpg'
+import p16image4 from '../Images/Projects/p16/4PS.jpg'
+import p16image5 from '../Images/Projects/p16/5PS.jpg'
+import p16image6 from '../Images/Projects/p16/6PS.jpg'
+
 
 
 
@@ -94,7 +101,6 @@ import p15image5 from '../Images/Projects/p15/p5.png'
 export {
 
     som,
-    som1,
     kitchen,
     project1,
     aslogo,
@@ -183,7 +189,13 @@ export {
     p15image3,
     p15image4,
     p15image5,
-
+   
+    p16image1,
+    p16image2,
+    p16image3,
+    p16image4,
+    p16image5,
+    p16image6,
 
 
 }

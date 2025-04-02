@@ -20,7 +20,7 @@ function About() {
 
 {/* h-[450px] */}
           <div className="w-[320px]">
-            <img className='bg-color3 w-full rounded-3xl' src={som} alt="" />
+            <img  loading='lazy'className='bg-color3 w-full rounded-3xl' src={som} alt="" />
           </div>
           <div className="text-center lg:text-start">
             <h1 className='text-5xl poppins-bold'>I'm Som Soni,</h1>

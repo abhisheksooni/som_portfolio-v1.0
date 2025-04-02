@@ -183,3 +183,21 @@
 .oberdd::-webkit-scrollbar {
   display: none;
 }
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.vertical-video {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+ 
+  object-fit: cover;
+}

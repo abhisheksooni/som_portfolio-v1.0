@@ -23,6 +23,12 @@ import {  p10image1,
   p15image3,
   p15image4,
   p15image5,
+  p16image1,
+  p16image2,
+  p16image3,
+  p16image4,
+  p16image5,
+  p16image6,
   p1image1,
   p1image2,
   p1image3,
@@ -67,6 +73,11 @@ import 'lightgallery/scss/lg-zoom.scss';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import WhatsappButton from '../components/WhatsappButton';
+
+// images loding
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 function ProjectsShow() {
   const bathroomimage = [
@@ -321,6 +332,34 @@ function ProjectsShow() {
       
       
         ]
+          const project19 = [
+            {
+              id: 191,
+              img: p16image1
+            },
+            {
+              id: 192,
+              img: p16image2
+            },
+            {
+              id: 193,
+              img: p16image3
+            },
+            {
+              id: 194,
+              img: p16image4
+            },
+            {
+              id: 195,
+              img: p16image5
+            },
+            {
+              id: 196,
+              img: p16image6
+            },
+        
+        
+          ]
 
   const {name} = useParams()
   console.log(name);
@@ -360,6 +399,8 @@ function ProjectsShow() {
       setData(project17);
     }else if (name === "project18") {
       setData(project18);
+    }else if (name === "project19") {
+      setData(project19);
     }
   }, [name]);
 
@@ -381,7 +422,7 @@ function ProjectsShow() {
               
 
           <a href={image.img} className='w-[100%]  md:w-[45%] *:rounded-xl' key={image.id} >
-            <img className='w-[100%]  hover:scale-[.97] my-3 duration-150'  src={image.img} alt={image.img} />
+            <img  loading='lazy'className='w-[100%]  hover:scale-[.97] my-3 duration-150'  src={image.img} alt={image.img} />
           </a>
               
         ))}

@@ -30,7 +30,7 @@ function Nav() {
         <nav className='flex items-center justify-between px-10 py-5'>
           <NavLink to={"/"} className="flex items-center hover:pb-1.5 duration-150">
             <div className=" bg-color6/70 rounded-full">
-              <img className='w-10 ' src={logoicon} alt="" />
+              <img  loading='lazy'className='w-10 ' src={logoicon} alt="" />
             </div>
             <p className='ml-2'>Rending</p>
           </NavLink>
