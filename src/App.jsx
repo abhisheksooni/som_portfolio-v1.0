@@ -146,7 +146,7 @@ function App() {
 
             <div className=" flex gap-7 mt-10 flex-col md:flex-row ">
               <div className="">
-                <div className="image1 w-full lg:w-[570px] h-[480px] rounded-lg">
+                <div className="image1 w-full lg:w-[570px] h-[585px] rounded-lg">
 
                 </div>
 
@@ -161,7 +161,7 @@ function App() {
                 </div> */}
               </div>
               <div className="">
-                <div className="image2 w-full lg:w-[570px]  h-[480px] rounded-lg">
+                <div className="image2 w-full lg:w-[570px]  h-[585px] rounded-lg">
                   {/* <img  loading='lazy'className='image2 w-[570px] h-[480px] rounded-lg ' src={t1} alt={t1} /> */}
                 </div>
 
