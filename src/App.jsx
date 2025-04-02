@@ -2,7 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import {Helmet} from "react-helmet";
 import { useEffect } from 'react'
 import '@vidstack/react/player/styles/default/theme.css';
 import '@vidstack/react/player/styles/default/layouts/audio.css';
@@ -42,11 +42,14 @@ function App() {
 
 
   useEffect(() => {
-    // window.scroll({ top: 0, behavior: 'smooth' })
+    window.scroll({ top: 0, behavior: 'smooth' })
   }, [])
 
   return (
     <>
+               <Helmet>
+               <title>Home - Som soni</title>
+             </Helmet>
       <section className=''>
         {/* section 1 */}
         <section>

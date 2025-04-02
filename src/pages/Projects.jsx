@@ -62,6 +62,7 @@ import {
 } from '../Imports/Images'
 import { NavLink, } from 'react-router-dom'
 import { GalleryHorizontalEnd } from 'lucide-react'
+import {Helmet} from "react-helmet";
 
 import WhatsappButton from '../components/WhatsappButton'
 
@@ -356,6 +357,9 @@ function Projects() {
   return (
 
     <>
+       <Helmet>
+           <title>Projects</title>
+         </Helmet>
       <section className="w-[80%] mx-auto flex flex-col items-center ">
         <p className='text-5xl font-semibold uppercase'>Project</p>
         <div className=""></div>

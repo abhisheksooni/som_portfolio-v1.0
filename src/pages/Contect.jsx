@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import { X, Phone, Mail, Instagram, Facebook, Send, Linkedin } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 function Contect() {
 
@@ -35,7 +36,9 @@ function Contect() {
     return (
 
         <>
-        
+           <Helmet>
+               <title>Contact Us</title>
+             </Helmet>
         {/* <div className="h-[60px] lg:h-[90px]"></div> */}
         <div className=' flex justify-center items-center flex-col text-color3 mb-20 '>
 

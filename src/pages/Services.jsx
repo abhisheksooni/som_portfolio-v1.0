@@ -1,9 +1,17 @@
 import React from 'react'
-import WhatsappButton from '../components/WhatsappButton'
+import WhatsappButton from '../components/WhatsappButton';
+import {Helmet} from "react-helmet";
 
 function Services() {
+      useEffect(() => {
+        window.scroll({ top: 0, behavior: 'smooth' })
+      }, [])
     return (
-        <section className=' px-5 md:px-0 md:flex w-full justify-center gap-5  text-lg items-center '>
+  <>
+  <Helmet>
+    <title>Services</title>
+  </Helmet>
+  <section className=' px-5 md:px-0 md:flex w-full justify-center gap-5  text-lg items-center '>
             <div className="md:w-[47%]    lg:h-[80vh] mb-10 md:mb-0 mt-5 md:mt-0">
                 <p className='text-3xl text-center mb-5 uppercase'>our Process</p>
                 
@@ -91,6 +99,7 @@ function Services() {
         <WhatsappButton/>
         </div>
         </section>
+  </>
     )
 }
 

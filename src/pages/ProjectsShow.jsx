@@ -73,7 +73,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import WhatsappButton from '../components/WhatsappButton';
-
+import {Helmet} from "react-helmet";
 // images loding
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -368,6 +368,9 @@ function ProjectsShow() {
   const onInit = () => {
     console.log('lightGallery has been initialized');
 };
+useEffect(() => {
+  window.scroll({ top: 0, behavior: 'smooth' })
+}, [])
 
   useEffect(() => {
     // Set the data array based on the route parameter
@@ -407,6 +410,9 @@ function ProjectsShow() {
 
   return (
    <>
+     <Helmet>
+       <title>Project - Details</title>
+     </Helmet>
    <section className='columns-1k gap-5 mb-10 md:mb-16 *:rounded-xl flex items-stretch justify-center flex-wrap md:columns-2k px-5 md:px-10'>
     
    <LightGallery

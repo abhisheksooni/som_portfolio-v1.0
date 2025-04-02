@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { project1, som, t1, t2, t3 } from '../Imports/Images'
 import WhatsappButton from '../components/WhatsappButton'
+import {Helmet} from "react-helmet";
 function About() {
 
   useEffect(()=>{
@@ -8,6 +9,9 @@ function About() {
   },[])
   return (
     <>
+          <Helmet>
+               <title>About Us</title>
+             </Helmet>
     <div className="h-[40px] lg:h-[100px]"></div>
       <section className='max-w-[1800px] mx-auto lg:h-[70vh] px-4'>
         <div className=" flex items-center justify-center text-color3 gap-5">
