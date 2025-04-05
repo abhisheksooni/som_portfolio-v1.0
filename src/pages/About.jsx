@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { project1, som, t1, t2, t3 } from '../Imports/Images'
+import { som  } from '../Imports/Images'
 import WhatsappButton from '../components/WhatsappButton'
 import {Helmet} from "react-helmet";
 function About() {

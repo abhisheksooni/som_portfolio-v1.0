@@ -375,7 +375,7 @@ function Projects() {
       <div className=" columns-1  *:my-5 md:columns-3 p-5 md:p-10 ">
 
         <div className=" relative">
-          <NavLink to={`/projectshow/project18`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+          <NavLink to={`/projectshow/project19`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
             <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project19[0].img} alt="" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />

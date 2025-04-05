@@ -1,5 +1,5 @@
 
-import som from '../Images/som_dp.jpg'
+import som from '../Images/som_dpr.jpg'
 // import som1 from '../Images/som1.png'
 import kitchen from '../Images/kitchen.jpg'
 import project1 from '../Images/Projects/p2.png'
