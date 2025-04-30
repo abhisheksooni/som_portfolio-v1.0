@@ -32,7 +32,7 @@ function Nav() {
             <div className=" bg-color6/70 rounded-full">
               <img  loading='lazy'className='w-10 ' src={logoicon} alt="" />
             </div>
-            <p className='ml-2'>Rending</p>
+            <h1 className='ml-2'>Asara Studio</h1>
           </NavLink>
           <div className="hidden lg:flex">
             <ul className='flex items-center gap-8 hover:*:text-color2 font-semibold text-lg *:duration-150'>

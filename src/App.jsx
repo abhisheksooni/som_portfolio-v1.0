@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Home - Som soni</title>
+        <title>Asara Studio</title>
       </Helmet>
       <section className="">
         {/* section 1 */}
@@ -91,7 +91,7 @@ function App() {
             >
               <div className=" text-color1  bottom-10">
                 <p className="font-extrabold text-4xl">
-                  Welcome to AS Renderings
+                  Welcome to 
                 </p>
                 <p className="text-[16px]  mt-5 text-color1/50">
                   Step into a world where creativity meets functionality. At AS
@@ -122,7 +122,7 @@ function App() {
                 </p>
                 <p className="text-[16px]  mt-5 text-color3/50">
                   Your space tells a story, and we’re here to make it
-                  extraordinary. From concept to visualization, AS Renderings
+                  extraordinary. From concept to visualization, Asara Studio
                   delivers bespoke designs tailored to your style.
                 </p>
               </div>
@@ -151,7 +151,7 @@ function App() {
             </NavLink>
             <div className="bg-whiteh-[12rem] flexx  items-center w-[25rem]">
               <h2 className='mb-4 text-xl font-bold'>Our Process</h2>
-              <p className=' text-color3/60'>At <span className='font-semibold'>AS Rendering</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
+              <p className=' text-color3/60'>At <span className='font-semibold'>Asara Studio</span>, we take pride in our structured and thoughtful approach to interior design, ensuring every project is visually stunning and functionally efficient. Our process is designed to bring clarity and creativity to your space through detailed planning and visualization.</p>
           
             </div>
           </section>
@@ -207,7 +207,7 @@ function App() {
             <div className="max-w-[430px] text-white">
               <h2 className="font-medium mt-8 lg:mt-0 text-xl">About Us</h2>
               <p className="text-white/50 mt-2">
-                At AS Renderings, we are a team of passionate interior designers
+                At Asara Studio, we are a team of passionate interior designers
                 and 3D visualizers dedicated to transforming spaces into
                 exceptional living and working environments. We specialize in 3D
                 visualization, detailed space planning, and color selection to
@@ -217,7 +217,7 @@ function App() {
               </p>
               <h2 className="mt-6 mb-3 text-lg">Meet Our Founder</h2>
               <p className="text-white/50">
-                Som Soni, the creative mind behind AS Renderings, brings a keen
+                Som Soni, the creative mind behind Asara Studio, brings a keen
                 eye for detail and a deep understanding of design aesthetics.
                 With a background in interior design and expertise in 3D
                 visualization, Somya is dedicated to crafting immersive
@@ -334,7 +334,7 @@ function App() {
             <div className="bg-color6 p-5 px-10 rounded-xl  lg:max-w-[400px]">
               <p className="text-2xl font-semibold mb-4 text-white">Home</p>
               <p className="text-white/50">
-                At <span className="font-semibold">AS Rendering</span>, we take
+                At <h1 className="font-semibold">Asara Studio</h1>, we take
                 pride in our structured and thoughtful approach to interior
                 design, ensuring every project is visually stunning and
                 functionally efficient. Our process is designed to bring clarity
