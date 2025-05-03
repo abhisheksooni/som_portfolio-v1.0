@@ -91,11 +91,10 @@ function App() {
             >
               <div className=" text-color1  bottom-10">
                 <p className="font-extrabold text-4xl">
-                  Welcome to 
+                  Welcome to Asara Studio
                 </p>
                 <p className="text-[16px]  mt-5 text-color1/50">
-                  Step into a world where creativity meets functionality. At AS
-                  Renderings, we bring your interior dreams to life with
+                  Step into a world where creativity meets functionality. At Asara Studio, we bring your interior dreams to life with
                   stunning 3D visualizations and expert design solutions.
                 </p>
               </div>
@@ -121,7 +120,7 @@ function App() {
                   Designing Your Vision, Perfecting Every Detail
                 </p>
                 <p className="text-[16px]  mt-5 text-color3/50">
-                  Your space tells a story, and we’re here to make it
+                  Your space tells a story, and where here to make it
                   extraordinary. From concept to visualization, Asara Studio
                   delivers bespoke designs tailored to your style.
                 </p>
