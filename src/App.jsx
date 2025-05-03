@@ -333,7 +333,7 @@ function App() {
             <div className="bg-color6 p-5 px-10 rounded-xl  lg:max-w-[400px]">
               <p className="text-2xl font-semibold mb-4 text-white">Home</p>
               <p className="text-white/50">
-                At <h1 className="font-semibold">Asara Studio</h1>, we take
+                At <span className="font-semibold">Asara Studio</span>, we take
                 pride in our structured and thoughtful approach to interior
                 design, ensuring every project is visually stunning and
                 functionally efficient. Our process is designed to bring clarity
