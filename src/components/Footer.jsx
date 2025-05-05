@@ -35,7 +35,9 @@ function Footer() {
   return (
     <>
       <section className='bg-color3 p-5 text-white flex items-center justify-between gap-6 py-10 px-8 lg:px-20 '>
-        <div className=""><img  loading='lazy'className='w-16' src={aslogo} alt="" />
+        <div className="">
+          <img  loading='lazy' className='w-24 md:w-32' src={aslogo} alt="" />
+          {/* <p className='font-'>Asara Studio</p> */}
         </div>
         <div className="flex flex-wrap max-w-[60%] items-center gap-4 hover:*:text-color2 *:cursor-pointer">
 
