@@ -28,7 +28,7 @@ function About() {
           </div>
           <div className="text-center lg:text-start">
             <h1 className='text-5xl poppins-bold'>I'm Som Soni,</h1>
-            <h1 className='text-5xl poppins-bold py-1.5'>Interion Designer</h1>
+            <h2 className='text-5xl poppins-bold py-1.5'>Interion Designer</h2>
             <p className='max-w-[500px] my-2.5'>At <h1>Asara Studio</h1>, we are a team of passionate interior designers and 3D visualizers dedicated to transforming spaces into exceptional living and working environments. We specialize in 3D visualization, detailed space planning, and color selection to bring your ideas to life. Our commitment is to deliver designs that blend creativity with functionality, ensuring each project reflects a unique character and style.</p>
 
           </div>
