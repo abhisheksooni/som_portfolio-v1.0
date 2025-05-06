@@ -10,7 +10,8 @@ function About() {
   return (
     <>
           <Helmet>
-               <title>About Us</title>
+        <title>About Us</title>
+
              </Helmet>
     <div className="h-[40px] lg:h-[100px]"></div>
       <section className='max-w-[1800px] mx-auto lg:h-[70vh] px-4'>

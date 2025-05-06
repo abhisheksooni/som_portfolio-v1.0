@@ -46,7 +46,24 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Asara Studio</title>
+      <title>Asara Studio: Interior Design Solutions</title>
+      <meta name="description" content="Asara Studio offers innovative interior design solutions, specializing in 3D visualization and concept development. Transform your space with our expert team." />
+      <meta name="keywords" content="interior design, 3D visualization, concept development, space planning, color selection, bespoke designs" />
+
+      {/* Open Graph */}
+      <meta property="og:title" content="Asara Studio | Interior Design Solutions" />
+      <meta property="og:description" content="Asara Studio offers innovative interior design solutions, specializing in 3D visualization and concept development. Transform your space with our expert team." />
+      <meta property="og:url" content="https://www.asarastudio.in/" />
+      <meta property="og:type" content="website" />
+      {/* <meta property="og:image" content="https://www.asarastudio.in/assets/" /> */}
+
+ {/* Twitter Card */}
+ <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Asara Studio: Best Interior Design Solutions" />
+      <meta name="twitter:description" content="Elegant and modern interiors crafted by experts. Discover Asara Studio." />
+      <meta name="twitter:image" content="https://www.asarastudio.in/assets/og-image.jpg" />
+
+        
       </Helmet>
       <section className="">
         {/* section 1 */}
