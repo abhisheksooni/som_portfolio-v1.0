@@ -20,28 +20,28 @@ function Services() {
 
                 <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>Understanding Client Vision</span> <br />
-                        Our team refines the initial ideas into structured design concepts, ensuring functionality and aesthetics</p>
+                        <h3><span className='font-bold'>Understanding Client Vision</span> <br />
+                        Our team refines the initial ideas into structured design concepts, ensuring functionality and aesthetics</h3>
                     </div>
                 <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>Concept Development</span> <br />
-                        We begin by discussing your ideas, preferences, and requirements to create a design concept that aligns with your vision.</p>
+                        <h3><span className='font-bold'>Concept Development</span> <br />
+                        We begin by discussing your ideas, preferences, and requirements to create a design concept that aligns with your vision.</h3>
                     </div>
                 <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>2D Drawings & Space Planning </span> <br />
-                        We create detailed 2D layouts, including furniture placement, material selections, and design specifications to guide the overall concept.</p>
+                        <h3><span className='font-bold'>2D Drawings & Space Planning </span> <br />
+                        We create detailed 2D layouts, including furniture placement, material selections, and design specifications to guide the overall concept.</h3>
                     </div>
                 <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>3D Visualizations & Renders</span> <br />
-                        We transform the concept into high-quality 3D visuals, providing a realistic preview of the final design. This helps clients make informed decisions before any physical work begins.</p>
+                        <h3><span className='font-bold'>3D Visualizations & Renders</span> <br />
+                        We transform the concept into high-quality 3D visuals, providing a realistic preview of the final design. This helps clients make informed decisions before any physical work begins.</h3>
                     </div>
                 <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>Client Feedback & Revisions</span> <br />
-                        We collaborate closely with clients, making necessary adjustments to ensure the final renderings align perfectly with their expectations.</p>
+                        <h3><span className='font-bold'>Client Feedback & Revisions</span> <br />
+                        We collaborate closely with clients, making necessary adjustments to ensure the final renderings align perfectly with their expectations.</h3>
                     </div>
 
                 </div>
@@ -52,43 +52,43 @@ function Services() {
                 <div className="bg-color4 p-10 rounded-xl list-disc list-inside *:mb-5">
                     <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p><span className='font-bold'>3D Visualizations & Renders</span> <br />
+                        <h3><span className='font-bold'>3D Visualizations & Renders</span> <br />
                             High-quality, photorealistic 3D renders for residential and commercial spaces
                             Exterior and interior visualization to showcase design concepts
-                            Lighting and material detailing for a realistic preview</p>
+                            Lighting and material detailing for a realistic preview</h3>
                     </div>
 
                     <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p> <span className='font-bold'>Concept Development</span>  <br />
+                        <h3> <span className='font-bold'>Concept Development</span>  <br />
 
                             Creative ideation based on client requirements and preferences
 
                             Mood boards, color palettes, and material selection
 
-                            Space optimization strategies for efficient layouts</p>
+                            Space optimization strategies for efficient layouts</h3>
 
                     </div>
                     <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p> <span className='font-bold'>2D Drawings & Space Planning</span>  <br />
+                        <h3> <span className='font-bold'>2D Drawings & Space Planning</span>  <br />
 
                             Floor plans, elevations, and detailed layouts
 
                             Furniture placement and material specifications
 
-                            CAD drawings for precise execution</p>
+                            CAD drawings for precise execution</h3>
 
                     </div>
                     <div className="flex gap-4 items-start ">
                         <div className="bg-black p-1 h-1 mt-2 w-1 rounded-full"></div>
-                        <p> <span className='font-bold'>Color & Material Selection</span>  <br />
+                        <h3> <span className='font-bold'>Color & Material Selection</span>  <br />
 
                             Guidance on the best material combinations for a cohesive look
 
                             Selection of paint colors, textures, and finishes
 
-                            Coordination with suppliers for material sourcing</p>
+                            Coordination with suppliers for material sourcing</h3>
 
                     </div>
 

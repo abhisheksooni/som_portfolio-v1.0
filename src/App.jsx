@@ -8,14 +8,13 @@ import "@vidstack/react/player/styles/default/layouts/video.css";
 
 import CustomSlider from "./components/costomSlider/custom.slider";
 import {
-
   som,
   t1,
-
   t3,
   p11image1,
   p1image1,
 } from "./Imports/Images";
+
 import { NavLink } from "react-router-dom";
 
 import WhatsappButton from "./components/WhatsappButton";
@@ -23,19 +22,19 @@ function App() {
   const images = [
     {
       imgURL: p11image1,
-      imgAlt: p11image1,
+      imgAlt: "Luxurious living room design",
     },
     {
       imgURL: t1,
-      imgAlt: t1,
+      imgAlt: "Luxurious living room design",
     },
     {
       imgURL: p1image1,
-      imgAlt: p1image1,
+      imgAlt: "Luxurious living room design",
     },
     {
       imgURL: t3,
-      imgAlt: t3,
+      imgAlt: "Luxurious living room design",
     },
   ];
 
@@ -48,6 +47,10 @@ function App() {
       <Helmet>
       <title>Asara Studio: Interior Design Solutions</title>
       <meta name="description" content="Asara Studio offers innovative interior design solutions, specializing in 3D visualization and concept development. Transform your space with our expert team." />
+      <link rel="canonical" href="https://www.asarastudio.in/" />
+      <meta name="author" content="Asara Studio" />
+
+      <meta name="robots" content="index, follow" />
       <meta name="keywords" content="interior design, 3D visualization, concept development, space planning, color selection, bespoke designs" />
 
       {/* Open Graph */}
@@ -76,6 +79,7 @@ function App() {
                   key={index}
                   src={image.imgURL}
                   alt={image.imgAlt}
+                  
                 />
               );
             })}
@@ -107,13 +111,13 @@ function App() {
             "
             >
               <div className=" text-color1  bottom-10">
-                <p className="font-extrabold text-4xl">
+                <h1 className="font-extrabold text-4xl">
                   Welcome to Asara Studio
-                </p>
-                <p className="text-[16px]  mt-5 text-color1/50">
+                </h1>
+                <h2 className="text-[16px]  mt-5 text-color1/50">
                   Step into a world where creativity meets functionality. At Asara Studio, we bring your interior dreams to life with
                   stunning 3D visualizations and expert design solutions.
-                </p>
+                </h2>
               </div>
             </div>
             <div
@@ -121,26 +125,26 @@ function App() {
             "
             >
               <div className="text-white  bottom-10">
-                <p className="font-extrabold text-4xl">
+                <h1 className="font-extrabold text-4xl">
                   Transforming Spaces, Elevating Lifestyles
-                </p>
-                <p className="text-[16px]  mt-5 text-color1/50">
+                </h1>
+                <h2 className="text-[16px]  mt-5 text-color1/50">
                   Welcome to our interior design studio, where every detail is
                   crafted with passion. Explore our innovative concepts and
                   immersive 3D renderings designed to inspire.
-                </p>
+                </h2>
               </div>
             </div>
             <div className="snap-center bg-white rounded-md p-10 ">
               <div className="text-color3  bottom-10">
-                <p className="font-extrabold text-4xl">
+                <h1 className="font-extrabold text-4xl">
                   Designing Your Vision, Perfecting Every Detail
-                </p>
-                <p className="text-[16px]  mt-5 text-color3/50">
+                </h1>
+                <h2 className="text-[16px]  mt-5 text-color3/50">
                   Your space tells a story, and where here to make it
                   extraordinary. From concept to visualization, Asara Studio
                   delivers bespoke designs tailored to your style.
-                </p>
+                </h2>
               </div>
             </div>
           </div>
@@ -197,8 +201,8 @@ function App() {
                 </h2>
                 <p className="text-color3/60">
                   Designed for indulgence, our elegant bathrooms feature
-                  high-end materials, ambient lighting, and a spa-like
-                  atmosphere.{" "}
+                  high end materials, ambient lighting, and a like
+                  atmosphere.
                 </p>
               </div>
             </div>
@@ -236,7 +240,7 @@ function App() {
                 Som Soni, the creative mind behind Asara Studio, brings a keen
                 eye for detail and a deep understanding of design aesthetics.
                 With a background in interior design and expertise in 3D
-                visualization, Somya is dedicated to crafting immersive
+                visualization, Som is dedicated to crafting immersive
                 environments that resonate with functionality and style. From
                 selecting the perfect color palette to curating every detail,
                 his vision is to create spaces that inspire and delight.
