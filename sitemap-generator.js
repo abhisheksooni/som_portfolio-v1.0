@@ -9,7 +9,8 @@ import { createWriteStream } from 'fs';
 
   sitemap.write({ url: '/', changefreq: 'monthly', priority: 1.0 });
   sitemap.write({ url: '/services', changefreq: 'monthly' });
-  sitemap.write({ url: '/faq', changefreq: 'monthly' });
+  sitemap.write({ url: '/project', changefreq: 'monthly' });
+  sitemap.write({ url: '/about', changefreq: 'monthly' });
   sitemap.end();
 
   await streamToPromise(sitemap);

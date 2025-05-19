@@ -45,20 +45,19 @@ function App() {
   return (
     <>
       <Helmet>
-      <title>Asara Studio: Interior Design Solutions</title>
-      <meta name="description" content="Asara Studio offers innovative interior design solutions, specializing in 3D visualization and concept development. Transform your space with our expert team." />
+      <title>Asara Studio – 3D Interior Visualizer & Interior Designer India | Global Services</title>
+      <meta name="description" content="Asara Studio offers high-quality 3D interior renders, walkthroughs, and layout planning. Trusted freelance 3D visualizer and interior designer in India, serving clients globally" />
       <link rel="canonical" href="https://www.asarastudio.in/" />
       <meta name="author" content="Asara Studio" />
-
       <meta name="robots" content="index, follow" />
       <meta name="keywords" content="interior design, 3D visualization, concept development, space planning, color selection, bespoke designs" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="Asara Studio | Interior Design Solutions" />
-      <meta property="og:description" content="Asara Studio offers innovative interior design solutions, specializing in 3D visualization and concept development. Transform your space with our expert team." />
+      <meta property="og:title" content="Asara Studio – 3D Interior Visualizer & Interior Designer India | Global Services" />
+      <meta property="og:description" content="Asara Studio offers high-quality 3D interior renders, walkthroughs, and layout planning. Trusted freelance 3D visualizer and interior designer in India, serving clients globally." />
       <meta property="og:url" content="https://www.asarastudio.in/" />
       <meta property="og:type" content="website" />
-      {/* <meta property="og:image" content="https://www.asarastudio.in/assets/" /> */}
+     
 
  {/* Twitter Card */}
  <meta name="twitter:card" content="summary_large_image" />
