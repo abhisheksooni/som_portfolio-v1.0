@@ -58,7 +58,14 @@ import {  p10image1,
   p8image3,
   p9image1,
   p9image2,
-  p9image3, } from '../Imports/Images'
+  p9image3,
+  sp1image1,
+  sp2image2,
+  sp3image3,
+  sp4image4,
+  sp5image5,
+  sp6image6,
+  sp7image7, } from '../Imports/Images'
   import LightGallery from 'lightgallery/react';
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -361,6 +368,38 @@ function ProjectsShow() {
         
           ]
 
+
+            const projectsp1 = [
+              {
+                id: 201,
+                img: sp1image1
+              },
+              {
+                id: 202,
+                img: sp2image2
+              },
+              {
+                id: 203,
+                img: sp3image3
+              },
+              {
+                id: 204,
+                img: sp4image4
+              },
+              {
+                id: 205,
+                img: sp5image5
+              },
+              {
+                id: 206,
+                img: sp6image6
+              },
+              {
+                id: 207,
+                img: sp7image7
+              },
+            ]
+
   const {name} = useParams()
   console.log(name);
 
@@ -404,6 +443,8 @@ useEffect(() => {
       setData(project18);
     }else if (name === "project19") {
       setData(project19);
+    }else if (name === "projectsp1") {
+      setData(projectsp1);
     }
   }, [name]);
 

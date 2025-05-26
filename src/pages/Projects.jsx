@@ -59,10 +59,17 @@ import {
   simg1,
   simg2,
   simg3,
+  sp1image1,
+  sp2image2,
+  sp3image3,
+  sp4image4,
+  sp5image5,
+  sp6image6,
+  sp7image7
 } from '../Imports/Images'
 import { NavLink, } from 'react-router-dom'
 import { GalleryHorizontalEnd } from 'lucide-react'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import WhatsappButton from '../components/WhatsappButton'
 
@@ -349,6 +356,36 @@ function Projects() {
 
   ]
 
+  const projectsp1 = [
+    {
+      id: 201,
+      img: sp1image1
+    },
+    {
+      id: 202,
+      img: sp2image2
+    },
+    {
+      id: 203,
+      img: sp3image3
+    },
+    {
+      id: 204,
+      img: sp4image4
+    },
+    {
+      id: 205,
+      img: sp5image5
+    },
+    {
+      id: 206,
+      img: sp6image6
+    },
+    {
+      id: 207,
+      img: sp7image7
+    },
+  ]
 
 
   useEffect(() => {
@@ -357,9 +394,9 @@ function Projects() {
   return (
 
     <>
-       <Helmet>
-           <title>Projects</title>
-         </Helmet>
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
       <section className="w-[80%] mx-auto flex flex-col items-center ">
         <p className='text-5xl font-semibold uppercase'>Project</p>
         <div className=""></div>
@@ -375,16 +412,26 @@ function Projects() {
       <div className=" columns-1  *:my-5 md:columns-3 p-5 md:p-10 ">
 
         <div className=" relative">
-          <NavLink to={`/projectshow/project19`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project19[0].img} alt="Luxurious living room design" />
+          <NavLink to={`/projectshow/projectsp1`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={projectsp1[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
           </NavLink>
         </div>
+
+        <div className=" relative">
+          <NavLink to={`/projectshow/project19`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project19[0].img} alt="Luxurious living room design" />
+            <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
+              <GalleryHorizontalEnd size={30} color='#fff' />
+            </div>
+          </NavLink>
+        </div>
+
         <div className=" relative">
           <NavLink to={`/projectshow/project18`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project18[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project18[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -392,7 +439,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/project17`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project17[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project17[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -400,7 +447,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/project16`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project16[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project16[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -408,7 +455,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/project15`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project15[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project15[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -417,7 +464,7 @@ function Projects() {
 
         <div className=" relative">
           <NavLink to={`/projectshow/project14`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project14[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project14[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -425,7 +472,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/project13`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={project13[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={project13[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -433,7 +480,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/bathroomimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={bathroomimage[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={bathroomimage[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -442,7 +489,7 @@ function Projects() {
 
         <div className=" relative">
           <NavLink to={`/projectshow/room`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={room[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={room[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -450,7 +497,7 @@ function Projects() {
         </div>
         <div className="relative">
           <NavLink to={`/projectshow/home1`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={home1[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={home1[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -458,7 +505,7 @@ function Projects() {
         </div>
         <div className="relative">
           <NavLink to={`/projectshow/home2`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={home2[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={home2[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -466,7 +513,7 @@ function Projects() {
         </div>
         <div className="relative">
           <NavLink to={`/projectshow/gameroom`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={gameroom[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={gameroom[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -474,7 +521,7 @@ function Projects() {
         </div>
         <div className="relative">
           <NavLink to={`/projectshow/keycheinimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={keycheinimage[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={keycheinimage[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -482,7 +529,7 @@ function Projects() {
         </div>
         <div className=" relative">
           <NavLink to={`/projectshow/bathroom2image`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={bathroom2image[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={bathroom2image[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -491,7 +538,7 @@ function Projects() {
 
         <div className="relative">
           <NavLink to={`/projectshow/keychenimage`} className="bg-color4  relative rounded-2xl *:rounded-xl cursor-pointer">
-            <img  loading='lazy'className='hover:scale-[.98] duration-150' src={keychenimage[0].img} alt="Luxurious living room design" />
+            <img loading='lazy' className='hover:scale-[.98] duration-150' src={keychenimage[0].img} alt="Luxurious living room design" />
             <div className="absolute bottom-3 right-7  flex items-center  backdrop-blur-lg p-2 justify-center rounded-full ">
               <GalleryHorizontalEnd size={30} color='#fff' />
             </div>
@@ -499,16 +546,16 @@ function Projects() {
         </div>
       </div>
 
-<section className="">
-<p className='text-center text-4xl font-medium uppercase'>Singal Project Images</p>
-<div className="columns-1  *:my-5 md:columns-3 p-5 md:p-10 *:rounded-xl">
-  {singalimages.map((img)=>(
-    <div className="*:rounded-xl">
-      <img  loading='lazy'src={img.img} alt="Luxurious living room design" />
-    </div>
-  ))}
-</div>
-</section>
+      <section className="">
+        <p className='text-center text-4xl font-medium uppercase'>Singal Project Images</p>
+        <div className="columns-1  *:my-5 md:columns-3 p-5 md:p-10 *:rounded-xl">
+          {singalimages.map((img) => (
+            <div className="*:rounded-xl">
+              <img loading='lazy' src={img.img} alt="Luxurious living room design" />
+            </div>
+          ))}
+        </div>
+      </section>
 
       <div className=" fixed z-50 -bottom-[90vh] -right-[40vw] lg:-right-[46vw] w-[100vw] h-[100vh]">
         <WhatsappButton />

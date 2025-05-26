@@ -9,7 +9,7 @@ import "@vidstack/react/player/styles/default/layouts/video.css";
 import CustomSlider from "./components/costomSlider/custom.slider";
 import {
   som,
-  t1,
+  t2,
   t3,
   p11image1,
   p1image1,
@@ -25,7 +25,7 @@ function App() {
       imgAlt: "Luxurious living room design",
     },
     {
-      imgURL: t1,
+      imgURL: t2,
       imgAlt: "Luxurious living room design",
     },
     {

@@ -1,11 +1,13 @@
 
 import som from '../Images/som_dpr.jpg'
-// import som1 from '../Images/som1.png'
+
+// Home image
+
 import kitchen from '../Images/kitchen.jpg'
 import project1 from '../Images/Projects/p2.png'
 import aslogo from '../Images/aslogo.png'
 import t1 from '../Images/thambnail/p1.jpg'
-import t2 from '../Images/thambnail/p2.jpeg'
+import t2 from '../Images/thambnail/p2.png'
 import t3 from '../Images/thambnail/p3.png'
 
 import img11 from '../Images/getstart/img1.jpg'
@@ -92,7 +94,13 @@ import p16image4 from '../Images/Projects/p16/4PS.jpg'
 import p16image5 from '../Images/Projects/p16/5PS.jpg'
 import p16image6 from '../Images/Projects/p16/6PS.jpg'
 
-
+import sp1image1 from '../Images/Projects/sp1/p1.png'
+import sp2image2 from '../Images/Projects/sp1/p2.png'
+import sp3image3 from '../Images/Projects/sp1/p3.png'
+import sp4image4 from '../Images/Projects/sp1/p4.png'
+import sp5image5 from '../Images/Projects/sp1/p5.png'
+import sp6image6 from '../Images/Projects/sp1/p6.png'
+import sp7image7 from '../Images/Projects/sp1/p7.png'
 
 
 
@@ -197,5 +205,12 @@ export {
     p16image5,
     p16image6,
 
+    sp1image1,
+    sp2image2,  
+    sp3image3,  
+    sp4image4,  
+    sp5image5,  
+    sp6image6,  
+    sp7image7,  
 
 }
